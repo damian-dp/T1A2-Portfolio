@@ -1,0 +1,110 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none; 
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(/fonts/NeueMontreal-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(/fonts/NeueMontreal-Medium.otf) format('opentype');
+    font-weight: 500;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Mondwest";
+    src: url(/fonts/Mondwest-Regular.otf) format('opentype');
+    font-weight: 500;
+    font-size: normal;
+}
+
+img {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: "Neue Montreal", Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight 500;
+    background-color: #161616;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 6px;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(123deg, rgba(79, 79, 79, 0.08) 1.74%, rgba(79, 79, 79, 0.08) 1.75%, rgba(255, 255, 255, 0.08) 33.05%, rgba(79, 79, 79, 0.08) 97.16%);
+    -webkit-backdrop-filter: blur(24.999996185302734px);
+    backdrop-filter: blur(24.999996185302734px);
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.navlink {
+    padding: 14px 18px 15px 18px;
+    border-radius: 90px;
+    color: #ffffff;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.navlink:hover {
+    padding: 14px 18px 15px 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 90px;
+    color: #ffffff;
+}
+
+.current {
+    padding: 14px 18px 15px 18px;
+    background: rgba(225, 254, 2, 0.8);
+    border-radius: 90px;
+    color: #252525;
+}
+
+.current:hover {
+    padding: 14px 18px 15px 18px;
+    background: rgba(225, 254, 2, 0.8);
+    border-radius: 90px;
+    color: #252525;
+}
+
+.separator {
+    width: 1px;
+    height: 28px;
+    background-color: white;
+    opacity: .15;
+    margin: 0px 2px 0px 2px;
+
+}
+
+h1 {
+    -webkit-text-stroke: 1.4px #E1FE02;
+    font-family: Mondwest;
+    font-size: 150.454px;
+    letter-spacing: -3.009px;
+    color: #ffffff00;
+    margin-bottom: -10px;
+    margin-top: 160px;
+}
