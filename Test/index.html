@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="thebox" class="box transform">
+    </div>
+    
+    <input type="button" id="button" class="button" value="Click Me"></input>
+
+    <script type="text/javascript">
+       $(document).ready(function(){   // you can use this line for more event, no piont repeating it in this file
+      // add toggle and display X
+     $(".button").click(function() {
+    $("box.transform").addClass("transform-active");
+     });  // end of display/toggle
+
+      // Put  next code/click event under the same $(document).ready(). 
+    }); //End of ready()
+
+</script> 
+
+</body>
+</html>

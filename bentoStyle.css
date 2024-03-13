@@ -1,0 +1,141 @@
+html {
+    scroll-behavior:smooth
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.hide {
+    display: none !important;  
+}
+
+.bento-wrapper {
+    padding: 16px 16px 0px 16px;
+    height: auto;
+    transition: all 0.25s linear;
+    /* background-color: aqua; */
+
+}
+
+.bento-all {  
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tile-1 tile-1 tile-2 tile-2"
+      "tile-3 tile-4 tile-5 tile-6"
+      "tile-3 tile-4 tile-7 tile-7";
+
+}
+
+.bento-design {  
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tile-1 tile-1 tile-2 tile-2"
+      "tile-3 tile-4 tile-5 tile-6"
+      "tile-3 tile-4 tile-7 tile-7";
+
+}
+
+.bento-dev {  
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tile-1 tile-1 tile-2 tile-2"
+      "tile-3 tile-4 tile-5 tile-6"
+      "tile-3 tile-4 tile-7 tile-7";
+
+}
+
+.bento-articles {  
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tile-1 tile-1 tile-2 tile-2"
+      "tile-3 tile-4 tile-5 tile-6"
+      "tile-3 tile-4 tile-7 tile-7";
+
+}
+  
+.tile-1 { 
+    grid-area: tile-1;
+    height: calc(33.33dvh - 22px);
+    
+}
+  
+.tile-2 { 
+    grid-area: tile-2;
+    height: calc(33.33dvh - 22px);
+}
+  
+.tile-3 {  
+    grid-area: tile-3;
+    height: calc(66.66dvh - 26px);
+}
+
+.tile-4 { 
+    grid-area: tile-4;
+    height: calc(66.66dvh - 26px);
+
+}
+
+.tile-5 { 
+    grid-area: tile-5; 
+}
+
+.tile-6 { 
+    grid-area: tile-6; 
+}
+
+.tile-7 { 
+    grid-area: tile-7; 
+}
+
+
+.tile {
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    transform: scale(.95);
+    opacity: 0;
+}
+
+  
+.fade-out {
+    -webkit-transition: all .4s ease;  
+    -moz-transition: all .4s ease;  
+    -o-transition: all .4s ease;  
+    -ms-transition: all .4s ease;  
+    transition: all .4s ease;
+    opacity: 0;
+    transform: scale(.95);
+}
+
+.fade-in {
+    -webkit-transition: all .4s ease;  
+    -moz-transition: all .4s ease;  
+    -o-transition: all .4s ease;  
+    -ms-transition: all .4s ease;  
+    transition: all .4s ease;
+    opacity: 1;
+    transform: scale(1);
+}
