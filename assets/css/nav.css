@@ -33,6 +33,11 @@ nav {
     backdrop-filter: blur(24.999996185302734px);
 }
 
+#nav.dark {
+    border: 1px solid white;
+    background: linear-gradient(123deg, rgba(79, 79, 79, 0.05) 1.74%, rgba(79, 79, 79, 0.05) 1.75%, rgba(255, 255, 255, 0.03) 33.05%, rgba(79, 79, 79, 0.05) 97.16%), rgba(0, 0, 0, 0.30);
+}
+
 .navlink {
     -webkit-transition: all .25s ease;  
     -moz-transition: all .25s ease;  

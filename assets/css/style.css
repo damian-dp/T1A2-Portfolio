@@ -1,6 +1,7 @@
 @import "/assets/css/fonts.css";
 @import "/assets/css/nav.css";
 @import "/assets/css/normalize.css";
+@import "/assets/css/footer.css";
 
 
 
@@ -35,13 +36,16 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 16px 16px;
     grid-auto-flow: row;
     grid-template-areas:
       "tile-1 tile-1 tile-2 tile-2"
       "tile-3 tile-4 tile-5 tile-6"
-      "tile-3 tile-4 tile-7 tile-7";
+      "tile-3 tile-4 tile-7 tile-7"
+      "tile-8 tile-8 tile-9 tile-10"
+      "tile-11 tile-12 tile-9 tile-10"
+      "tile-13 tile-13 tile-14 tile-14";
 
 }
 
@@ -139,6 +143,54 @@ body {
     max-height: 480px;
 }
 
+.tile-8 { 
+    grid-area: tile-8;
+    height: calc(((100dvh - 66px) * 0.33) - 24px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.tile-9 {  
+    grid-area: tile-9;
+    height: calc(((100dvh - 66px) * 0.66) - 24px);
+    min-height: 446px;
+    max-height: 976px;
+}
+
+.tile-10 {  
+    grid-area: tile-10;
+    height: calc(((100dvh - 66px) * 0.66) - 24px);
+    min-height: 446px;
+    max-height: 976px;
+}
+
+.tile-11 { 
+    grid-area: tile-11;
+    height: calc(((100dvh - 66px) * 0.33) - 21.33px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.tile-12 { 
+    grid-area: tile-12;
+    height: calc(((100dvh - 66px) * 0.33) - 21.33px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.tile-13 { 
+    grid-area: tile-13;
+    height: calc(((100dvh - 66px) * 0.33) - 24px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.tile-14 { 
+    grid-area: tile-14;
+    height: calc(((100dvh - 66px) * 0.33) - 24px);
+    min-height: 215px;
+    max-height: 480px;
+}
 
 .tile {
     display: flex;

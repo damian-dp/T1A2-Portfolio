@@ -1,5 +1,9 @@
  
 $(document).ready(function(){
+
+    document.querySelector(".logo").addEventListener("click", () => {
+        document.querySelector("#nav").classList.toggle("dark");
+    })
     
     // Trigger Fade In animation for all tiles on document load
     setTimeout(function(){
@@ -134,9 +138,6 @@ $(document).ready(function(){
 
         }, 500);
 
-    }); 
-
-    $('./assets/img/logo.svg').css('fill', 'red');
-
+    });
 
 });
