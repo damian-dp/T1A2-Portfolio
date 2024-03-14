@@ -1,83 +1,70 @@
+@import "/assets/css/normalize.css";
+
+
+
+.navWrapper {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    animation-name: moveUp;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes moveUp {
+    from {bottom: -62px}
+    to {bottom: 60px}
+}
+
+
 nav {
     display: flex;
     align-items: center;
     width: fit-content;
     padding: 6px;
     gap: 4px;
-    flex-shrink: 0;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(123deg, rgba(79, 79, 79, 0.08) 1.74%, rgba(79, 79, 79, 0.08) 1.75%, rgba(255, 255, 255, 0.08) 33.05%, rgba(79, 79, 79, 0.08) 97.16%);
-    background-color: #16161603;
     -webkit-backdrop-filter: blur(24.999996185302734px);
     backdrop-filter: blur(24.999996185302734px);
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
 }
 
 
 .navlink {
-    padding: 14px 18px 15px 18px;
-    border-radius: 90px;
-    color: #ffffff;
-    transition: .2s;
-    cursor: pointer;
-    background: rgba(225, 254, 2, 0);
-
-}
-
-.navlink:hover {
-    padding: 14px 18px 15px 18px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 90px;
-    color: #ffffff;
-}
-
-.current {
     -webkit-transition: all .25s ease;  
     -moz-transition: all .25s ease;  
     -o-transition: all .25s ease;  
     -ms-transition: all .25s ease;  
     transition: all .25s ease;
-    background: rgba(225, 254, 2, 0.6);
+    padding: 14px 18px 15px 18px;
+    border-radius: 90px;
+    outline: .8px solid var(--whiteOpacity);
 }
 
+.navlink:hover {
+    background: var(--BW-10);
+    outline: .8px solid var(--BW-00);
+}
 
+.current {
+    background: var(--yellowFade);
+    outline: .8px solid var(--whiteOpacity);
+}
+
+.current:hover {
+    background: var(--yellowFade);
+    outline: .8px solid var(--whiteOpacity);
+}
 
 .separator {
     width: 1px;
     height: 28px;
-    background-color: white;
-    opacity: .15;
+    background-color: var(--BW-30);
     margin: 0px 2px 0px 2px;
 
-}
-
-
-.light {
-    color: #181818;
-    font-weight: 400;
-}
-
-.light:hover {
-    color: #181818;
-    font-weight: 400;
-    background: rgba(255, 255, 255, 0.424);
-
-}
-
-.lightSep {
-    background-color: #181818;
-    opacity: .2;
-}
-
-.current:hover {
-    padding: 14px 18px 15px 18px;
-    background: rgba(225, 254, 2, 0.8);
-    border-radius: 90px;
-    color: #252525;
 }

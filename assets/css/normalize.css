@@ -22,9 +22,6 @@
   
   body {
     margin: 0;
-    font-family: "Neue Montreal", Helvetica, sans-serif;
-    font-size: 12pt;
-    font-weight: 500;
   }
   
   /**
@@ -356,18 +353,42 @@
 
 
 
+/* ––––––  CUSTOME EDITS  –––––– */
 
   html {
     scroll-behavior:smooth
-}
+  }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none; 
-}
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
 
-.hide {
+  .hide {
     display: none !important;  
-}
+  }
+
+  /* ––––––  COLOURS  –––––– */
+
+    :root {
+      --yellowFull: #E1FE02;
+      --yellowFade: rgba(225, 254, 2, 0.8);
+      --BW-00: #ffffff;
+      --BW-10: #f6f6f6;
+      --BW-20: #F0F0F0;
+      --BW-30: #C7C7C7;
+      --BW-50: #787878;
+      --BW-60: #595959;
+      --BW-80: #383838;
+      --BW-90: #272727;
+      --BW-95: #181818;
+
+      --whiteOpacity: rgba(255, 255, 255, 0);
+      --blackOpacity: #00000000;
+
+
+    }
