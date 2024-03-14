@@ -8,7 +8,6 @@ $(document).ready(function(){
 
     }, 700);
 
-
     // ALL TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
     $("#all-tab").click(function() {
         
@@ -36,7 +35,7 @@ $(document).ready(function(){
             $(".tile").removeClass("fade-out");
             $(".tile").addClass("fade-in");
 
-        }, 410);
+        }, 500);
 
     }); 
 
@@ -68,7 +67,7 @@ $(document).ready(function(){
             $(".tile").removeClass("fade-out");
             $(".tile").addClass("fade-in");
 
-        }, 410);
+        }, 500);
 
     }); 
 
@@ -101,7 +100,7 @@ $(document).ready(function(){
             $(".tile").removeClass("fade-out");
             $(".tile").addClass("fade-in");
 
-        }, 410);
+        }, 500);
 
     }); 
 
@@ -133,9 +132,11 @@ $(document).ready(function(){
             $(".tile").removeClass("fade-out");
             $(".tile").addClass("fade-in");
 
-        }, 410);
+        }, 500);
 
     }); 
+
+    $('./assets/img/logo.svg').css('fill', 'red');
 
 
 });

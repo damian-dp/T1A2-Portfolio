@@ -1,10 +1,10 @@
 @import "/assets/css/normalize.css";
 
-
-
 .navWrapper {
+    width: 100dvw;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: fixed;
     z-index: 1;
     animation-name: moveUp;
@@ -20,7 +20,6 @@
     to {bottom: 60px}
 }
 
-
 nav {
     display: flex;
     align-items: center;
@@ -33,7 +32,6 @@ nav {
     -webkit-backdrop-filter: blur(24.999996185302734px);
     backdrop-filter: blur(24.999996185302734px);
 }
-
 
 .navlink {
     -webkit-transition: all .25s ease;  
