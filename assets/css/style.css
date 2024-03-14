@@ -1,26 +1,7 @@
-html {
-    scroll-behavior:smooth
-}
+@import "/assets/css/fonts.css";
+@import "/assets/css/nav.css";
+@import "/assets/css/normalize.css";
 
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    font-family: "Neue Montreal", Helvetica, sans-serif;
-    font-size: 12pt;
-    font-weight: 500;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none; 
-}
-
-.hide {
-    display: none !important;  
-}
 
 .bento-wrapper {
     padding: 16px 16px 0px 16px;

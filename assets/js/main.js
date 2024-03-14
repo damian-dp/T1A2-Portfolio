@@ -72,4 +72,70 @@ $(document).ready(function(){
 
     }); 
 
+
+    // DEV TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+    $("#dev-tab").click(function() {
+        
+        $(".tile").removeClass("fade-in");
+        $(".tile").addClass("fade-out");
+
+        $('#all-tab').removeClass("current");
+        $('#design-tab').removeClass("current");
+        $('#articles-tab').removeClass("current");
+
+        $('#dev-tab').addClass("current");
+
+        
+        setTimeout(function(){
+            
+            $(".bento-all").addClass("hide");
+            $(".bento-design").addClass("hide");
+            $(".bento-articles").addClass("hide");
+            
+            $(".bento-dev").removeClass("hide");
+
+        }, 400);
+
+        setTimeout(function(){
+            
+            $(".tile").removeClass("fade-out");
+            $(".tile").addClass("fade-in");
+
+        }, 410);
+
+    }); 
+
+    // ARTICLES TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+    $("#articles-tab").click(function() {
+        
+        $(".tile").removeClass("fade-in");
+        $(".tile").addClass("fade-out");
+
+        $('#all-tab').removeClass("current");
+        $('#design-tab').removeClass("current");
+        $('#dev-tab').removeClass("current");
+
+        $('#articles-tab').addClass("current");
+
+        
+        setTimeout(function(){
+            
+            $(".bento-all").addClass("hide");
+            $(".bento-design").addClass("hide");
+            $(".bento-dev").addClass("hide");
+
+            $(".bento-articles").removeClass("hide");
+
+        }, 400);
+
+        setTimeout(function(){
+            
+            $(".tile").removeClass("fade-out");
+            $(".tile").addClass("fade-in");
+
+        }, 410);
+
+    }); 
+
+
 });
