@@ -1,6 +1,6 @@
+@import "/assets/css/normalize.css";
 @import "/assets/css/fonts.css";
 @import "/assets/css/nav.css";
-@import "/assets/css/normalize.css";
 @import "/assets/css/footer.css";
 
 
@@ -8,13 +8,19 @@
 body {
     color: var(--BW-95);
     font-family: "Neue Montreal", Helvetica, sans-serif;
-    font-size: 12pt;
+    font-size: 1rem;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 16px 0px 16px;
 }
+
 
 .logoHeader {
     height: 50px;
-    padding: 16px 26px 0px 26px;
+    width: 100%;
+    padding: 16px 26px 16px 26px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,9 +32,10 @@ body {
 }
 
 .bento-wrapper {
-    padding: 16px 16px 0px 16px;
     height: auto;
     transition: all 0.25s linear;
+    width: 100%;
+    margin-bottom: 4.5rem;
 }
 
 .bento-all {  
@@ -234,6 +241,10 @@ button {
     gap: 4px;
     border-radius: 32px;
     background-color: var(--yellowFull);
-    font-size: 1rem;
     font-weight: 500;
+}
+
+.separator {
+    width: 1px;
+    background-color: var(--BW-30);
 }
