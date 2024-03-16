@@ -5,6 +5,7 @@ footer {
     align-items: center;
     gap: 2.25rem;
     margin-top: 4rem;
+    color: var(--BW-50);
 }
 
 .footer-top {
@@ -28,8 +29,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* align-items: flex-start;
-    align-self: stretch; */
+    color: var(--BW-95);
 }
 
 .footer-directory-column {
@@ -45,6 +45,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    color: var(--BW-50);
 }
 
 .footer-directory-column-link {
@@ -92,4 +93,15 @@ footer {
     border-radius: 20px;
     background-color: var(--BW-95);
     transition: .4s;
+}
+
+
+.currently-listening-widget-details {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+#current-song {
+    color: var(--BW-95);
 }
