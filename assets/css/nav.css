@@ -1,30 +1,19 @@
-
-.navWrapper {
-    width: 100dvw;
+nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: sticky;
     z-index: 1;
+    
+    width: fit-content;
+    padding: 6px;
+    gap: 4px;
+
     animation-name: moveUp;
     animation-duration: .4s;
     animation-timing-function: ease;
     animation-delay: .8s;
     animation-fill-mode: both;
 
-}
-
-@keyframes moveUp {
-    from {bottom: -62px}
-    to {bottom: 60px}
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    padding: 6px;
-    gap: 4px;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(123deg, rgba(79, 79, 79, 0.08) 1.74%, rgba(79, 79, 79, 0.08) 1.75%, rgba(255, 255, 255, 0.08) 33.05%, rgba(79, 79, 79, 0.08) 97.16%);
@@ -32,7 +21,12 @@ nav {
     backdrop-filter: blur(24.999996185302734px);
 }
 
-#nav.dark {
+@keyframes moveUp {
+    from {bottom: -62px}
+    to {bottom: 60px}
+}
+
+nav.dark {
     border: 1px solid white;
     background: linear-gradient(123deg, rgba(79, 79, 79, 0.05) 1.74%, rgba(79, 79, 79, 0.05) 1.75%, rgba(255, 255, 255, 0.03) 33.05%, rgba(79, 79, 79, 0.05) 97.16%), rgba(0, 0, 0, 0.30);
 }

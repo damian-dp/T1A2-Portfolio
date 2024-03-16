@@ -7,7 +7,7 @@ $(document).ready(function(){
     // Toggle dark mode on and off when click button
 
     document.querySelector(".logo").addEventListener("click", () => {
-        document.querySelector("#nav").classList.toggle("dark");
+        document.querySelector('nav').classList.toggle("dark");
     })
 
 /* ––––––––––––  END TOGGLE DARK MODE  –––––––––––– */

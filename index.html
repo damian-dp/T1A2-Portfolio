@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
 
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/fonts.css">
@@ -68,29 +70,38 @@
      
     </div>
 
-    <div class="navWrapper">
-        <nav id="nav">
-            <a id="all-tab" class="navlink current" href="#top">All</a>
-            <a id="design-tab" class="navlink" href="#top">Design</a>
-            <a id="dev-tab" class="navlink" href="#top">Development</a>
-            <a id="articles-tab" class="navlink" href="#top">Articles</a>
-            <div class="navSeparator"></div>
-            <a class="navlink" href="">About</a>
-        </nav>
-    </div>
+    <nav>
+        <a id="all-tab" class="navlink current" href="#top">All</a>
+        <a id="design-tab" class="navlink" href="#top">Design</a>
+        <a id="dev-tab" class="navlink" href="#top">Development</a>
+        <a id="articles-tab" class="navlink" href="#top">Articles</a>
+        <div class="navSeparator"></div>
+        <a class="navlink" href="">About</a>
+    </nav>
 
     <footer>
         
         <div class="footer-top text-size-small">
             <div class="currently-listening-widget">
-                <div class="audio-wave"></div>
+                <div class="audio-wave">
+                    <dotlottie-player src="/assets/img/audio_wave_black.json" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                </div>
                 <div class="currently-listening-widget-details">
                     <div>Currently Listening to</div>
                     <div id="current-song">Current song name by Artist name</div>
-                    </div>
                 </div>
             </div>
-            <div class="social-links"></div>
+            <div class="social-links">
+                <a href="https://github.com" class="social-buttons">
+                    <img src="assets/img/github-icon.svg" alt="Github icon" class="social-icons git">
+                </a>
+                <a href="https://github.com" class="social-buttons">
+                    <img src="assets/img/twitter-icon.svg" alt="Github icon" class="social-icons">
+                </a>
+                <a href="https://github.com" class="social-buttons linkedin">
+                    <img src="assets/img/linkedin-icon.svg" alt="Github icon" class="social-icons">
+                </a>
+            </div>
         </div>
         
         <div class="footer-directory text-size-small">
