@@ -1,18 +1,37 @@
  
 $(document).ready(function(){
 
+
+/* ––––––––––––  TOGGLE DARK MODE  –––––––––––– */
+
+    // Toggle dark mode on and off when click button
+
     document.querySelector(".logo").addEventListener("click", () => {
         document.querySelector("#nav").classList.toggle("dark");
     })
+
+/* ––––––––––––  END TOGGLE DARK MODE  –––––––––––– */
+
+
+
+/* ––––––––––––  TILES FADE IN  –––––––––––– */
     
-    // Trigger Fade In animation for all tiles on document load
+    // Fade in all tiles on page load after a delat of .7s
+
     setTimeout(function(){
             
         $(".tile").addClass("fade-in");
 
     }, 700);
 
-    // ALL TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+/* ––––––––––––  END TILES FADE IN  –––––––––––– */
+
+
+
+/* ––––––––––––  ALL TAB FADE IN  –––––––––––– */
+
+    // Trigger Fade out of all tiles and then fade in of all ALL tab tiles
+
     $("#all-tab").click(function() {
         
         $(".tile").removeClass("fade-in");
@@ -42,9 +61,14 @@ $(document).ready(function(){
         }, 500);
 
     }); 
+/* ––––––––––––  END ALL TAB FADE IN  –––––––––––– */
 
 
-    // DESIGN TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+
+/* ––––––––––––  DESIGN TAB FADE IN  –––––––––––– */
+
+    // Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+
     $("#design-tab").click(function() {
         
         $(".tile").removeClass("fade-in");
@@ -75,8 +99,14 @@ $(document).ready(function(){
 
     }); 
 
+/* ––––––––––––  END DESIGN TAB FADE IN  –––––––––––– */
 
-    // DEV TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+
+
+/* ––––––––––––  DEV TAB FADE IN  –––––––––––– */
+
+    // Trigger Fade out of all tiles and then fade in of all DEV tiles
+
     $("#dev-tab").click(function() {
         
         $(".tile").removeClass("fade-in");
@@ -108,7 +138,14 @@ $(document).ready(function(){
 
     }); 
 
-    // ARTICLES TAB –––– Trigger Fade out of all tiles and then fade in of all DESIGN tiles
+/* ––––––––––––  END DEV TAB FADE IN  –––––––––––– */
+
+
+
+/* ––––––––––––  ARTICLES TAB FADE IN  –––––––––––– */
+
+    // Trigger Fade out of all tiles and then fade in of all ARTICLES tiles
+
     $("#articles-tab").click(function() {
         
         $(".tile").removeClass("fade-in");
@@ -140,66 +177,70 @@ $(document).ready(function(){
 
     });
 
-
-    /* ––––––––––––  LOCAL TIME WIDGET  –––––––––––– */
-
-        // Display current time in Melbourne, Australia
-        // Also update status div BG colour
-        setInterval(() => {
-            fetch('https://worldtimeapi.org/api/timezone/Australia/Melbourne')
-            .then(response => response.json())
-            .then(data => {
-                const timeInMelbourne = new Date(data.datetime);
-                const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'Australia/Melbourne' };
-                const localTime = timeInMelbourne.toLocaleTimeString('en-AU', options);
-                document.querySelector('#local-time').innerHTML = localTime;
-
-                const hour = timeInMelbourne.getHours();
-                const statusDiv = document.querySelector('#current-availability-indicator');
-                if (hour >= 9 && hour < 17) {
-                statusDiv.style.backgroundColor = 'limegreen';
-                document.querySelector('#current-availability-label').innerHTML = 'Currently available';
-                } else {
-                statusDiv.style.backgroundColor = 'red';
-                document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
-                }
-            })
-            .catch(error => console.error(error));
-        }, 1000);
-
-    /* ––––––––––––  END LOCAL TIME WIDGET  –––––––––––– */
+/* ––––––––––––  END ARTICLES TAB FADE IN  –––––––––––– */
 
 
 
-    /* ––––––––––––  LOCAL WEATHER WIDGET  –––––––––––– */
+/* ––––––––––––  LOCAL TIME WIDGET  –––––––––––– */
 
-        // Display current temprature in melbourne via API
-        const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Melbourne,AU&units=metric&appid=e54292e35cd881e9ae8d38f6450a9038";
-
-        function updateTemperature() {
-        fetch(API_URL)
-            .then(response => response.json())
-            .then(data => {
-            // Get the temperature in Celsius
-            const temperature = Math.round(data.main.temp);
-            // Format the temperature as "15°C"
-            const temperatureString = temperature + "°C";
-            // Update the contents of the div
-            document.querySelector("#local-temp").textContent = temperatureString;
-            });
-        }
-
-        // Call the updateTemperature function initially
-        updateTemperature();
-
-        // Set an interval to call the updateTemperature function every hour (in milliseconds)
-        setInterval(updateTemperature, 60 * 60 * 1000);
-
-    /* ––––––––––––  END LOCAL WEATHER WIDGET  –––––––––––– */
-
+    // Display current time in Melbourne, Australia
+    // Also update status div BG colour
     
-    
-    /* ––––––––––––  CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
+    setInterval(() => {
+        fetch('https://worldtimeapi.org/api/timezone/Australia/Melbourne')
+        .then(response => response.json())
+        .then(data => {
+            const timeInMelbourne = new Date(data.datetime);
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, timeZone: 'Australia/Melbourne' };
+            const localTime = timeInMelbourne.toLocaleTimeString('en-AU', options);
+            document.querySelector('#local-time').innerHTML = localTime;
+
+            const hour = timeInMelbourne.getHours();
+            const statusDiv = document.querySelector('#current-availability-indicator');
+            if (hour >= 9 && hour < 17) {
+            statusDiv.style.backgroundColor = 'limegreen';
+            document.querySelector('#current-availability-label').innerHTML = 'Currently available';
+            } else {
+            statusDiv.style.backgroundColor = 'red';
+            document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
+            }
+        })
+        .catch(error => console.error(error));
+    }, 1000);
+
+/* ––––––––––––  END LOCAL TIME WIDGET  –––––––––––– */
+
+
+
+/* ––––––––––––  LOCAL WEATHER WIDGET  –––––––––––– */
+
+    // Display current temprature in melbourne via API
+    const API_URL = "https://api.openweathermap.org/data/2.5/weather?q=Melbourne,AU&units=metric&appid=e54292e35cd881e9ae8d38f6450a9038";
+
+    function updateTemperature() {
+    fetch(API_URL)
+        .then(response => response.json())
+        .then(data => {
+        // Get the temperature in Celsius
+        const temperature = Math.round(data.main.temp);
+        // Format the temperature as "15°C"
+        const temperatureString = temperature + "°C";
+        // Update the contents of the div
+        document.querySelector("#local-temp").textContent = temperatureString;
+        });
+    }
+
+    // Call the updateTemperature function initially
+    updateTemperature();
+
+    // Set an interval to call the updateTemperature function every hour (in milliseconds)
+    setInterval(updateTemperature, 60 * 60 * 1000);
+
+/* ––––––––––––  END LOCAL WEATHER WIDGET  –––––––––––– */
+
+
+
+/* ––––––––––––  CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
 
     const lastfmAPIKey = '4310677c78bdcb21ee2bad7336645da1';
 
@@ -231,7 +272,15 @@ $(document).ready(function(){
     setInterval(updateCurrentSong, 10 * 1000);
     updateCurrentSong();
 
-    /* ––––––––––––  END CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
+/* ––––––––––––  END CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
+
+
+
+/* ––––––––––––  CURRENT YEAR for COPYRIGHT  –––––––––––– */
+
+    document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
+/* ––––––––––––  END CURRENT YEAR for COPYRIGHT –––––––––––– */
 
 
 
