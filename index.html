@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
 </head>
 <body>
@@ -71,7 +75,7 @@
             <a id="dev-tab" class="navlink" href="#top">Development</a>
             <a id="articles-tab" class="navlink" href="#top">Articles</a>
             <div class="navSeparator"></div>
-            <a class="navlink" href="">Contact</a>
+            <a class="navlink" href="">About</a>
         </nav>
     </div>
 
@@ -196,7 +200,15 @@
         
         <div class="footer-bottom text-size-small">
             <div class="footnote">© 2024 Damian Petrov. All rights reserved.</div>
-            <div class="local-data">Melbourne 17:04:03 15°C</div>
+            <!-- <div class="current-availability">
+                <div id="current-availability-indicator"></div>
+                <div id="current-availability-label">Currently available</div>
+            </div> -->
+            <div class="local-data">
+                <div id="local-name">Melbourne</div>
+                <div id="local-time">17:04:03</div>
+                <div id="local-temp">15°C</div>
+            </div>
 
 
         </div>

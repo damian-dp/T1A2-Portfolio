@@ -1,7 +1,24 @@
-@import "/assets/css/normalize.css";
-@import "/assets/css/fonts.css";
-@import "/assets/css/nav.css";
-@import "/assets/css/footer.css";
+
+/* ––––––  COLOURS  –––––– */
+
+    :root {
+        --yellowFull: #E1FE02;
+        --yellowFade: rgba(225, 254, 2, 0.8);
+        --BW-00: #ffffff;
+        --BW-10: #f6f6f6;
+        --BW-20: #F0F0F0;
+        --BW-30: #C7C7C7;
+        --BW-50: #787878;
+        --BW-60: #595959;
+        --BW-80: #383838;
+        --BW-90: #272727;
+        --BW-95: #181818;
+
+        --whiteOpacity: rgba(255, 255, 255, 0);
+        --blackOpacity: #00000000;
+    }
+
+/* ––––––  END COLOURS  –––––– */
 
 
 
@@ -16,6 +33,9 @@ body {
     padding: 0px 16px 0px 16px;
 }
 
+.hide {
+    display: none !important;  
+}
 
 .logoHeader {
     height: 50px;

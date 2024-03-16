@@ -62,5 +62,34 @@ footer {
 .audio-gif {
     height: 100px;
     width: 100px;
-    background-color: red;
+    background-color: limegreen;
+}
+
+.local-data {
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+}
+
+#local-name {
+    color: var(--BW-95);
+}
+
+#local-time {
+    width: 2.9rem;
+}
+
+.current-availability {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+#current-availability-indicator {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 20px;
+    background-color: var(--BW-95);
+    transition: .4s;
 }
