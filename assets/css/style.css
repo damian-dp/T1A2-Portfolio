@@ -37,7 +37,7 @@ body {
     display: none !important;  
 }
 
-.logoHeader {
+.header {
     height: 50px;
     padding: 16px 16px 16px 16px;
     display: flex;
