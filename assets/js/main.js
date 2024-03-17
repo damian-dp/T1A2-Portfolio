@@ -28,6 +28,27 @@ $(document).ready(function(){
 
 
 
+/* ––––––––––––  TRANSITION TO ABOUT PAGE –––––––––––– */
+
+    // Trigger Fade out of body content and then directs to About page
+
+    $(".link-delay").click(function() {
+        
+        $("section").removeClass("fade-in");
+        $("section").addClass("fade-out");
+
+    });
+
+    setTimeout(function(){
+        
+        $("section").addClass("fade-in");
+
+    }, 200);
+
+/* ––––––––––––  END ALL TAB FADE IN  –––––––––––– */
+
+
+
 /* ––––––––––––  ALL TAB FADE IN  –––––––––––– */
 
     // Trigger Fade out of all tiles and then fade in of all ALL tab tiles
@@ -279,6 +300,17 @@ $(document).ready(function(){
 /* ––––––––––––  CURRENT YEAR for COPYRIGHT  –––––––––––– */
 
     document.getElementById("current-year").innerHTML = new Date().getFullYear();
+
+/* ––––––––––––  END CURRENT YEAR for COPYRIGHT –––––––––––– */
+
+
+/* ––––––––––––  CURRENT YEAR for COPYRIGHT  –––––––––––– */
+
+    $('.link-delay').click(function(e) {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+        setTimeout(function(url) { window.location = url }, 800, this.href)
+    });
 
 /* ––––––––––––  END CURRENT YEAR for COPYRIGHT –––––––––––– */
 

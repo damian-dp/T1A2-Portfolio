@@ -20,6 +20,16 @@
 
 /* ––––––  END COLOURS  –––––– */
 
+::-moz-selection { /* Code for Firefox */
+    color: var(--BW-95);
+    background: var(--yellowFull);
+  }
+  
+  ::selection {
+    color: var(--BW-95);
+    background: var(--yellowFull);
+  }
+
 
 body {
     color: var(--BW-95);
@@ -33,11 +43,26 @@ body {
     
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60rem;
+    margin-bottom: 4.5rem;
+    transition: all 0.25s linear;
+    opacity: 0;
+}
+
+.bento-section {
+    width: 100%;
+    max-width: 100dvw;
+}
+
 .hide {
     display: none !important;  
 }
 
-.header {
+header {
     height: 50px;
     padding: 16px 16px 16px 16px;
     display: flex;
@@ -49,13 +74,6 @@ body {
 
 .logo {
     width: 30px
-}
-
-.bento-wrapper {
-    height: auto;
-    transition: all 0.25s linear;
-    width: 100%;
-    margin-bottom: 4.5rem;
 }
 
 .bento-all {  
@@ -227,6 +245,11 @@ body {
     opacity: 0;
 }
 
+.tile:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
   
 .fade-out {
     -webkit-transition: all .3s ease;  
@@ -239,11 +262,11 @@ body {
 }
 
 .fade-in {
-    -webkit-transition: all .3s ease;  
-    -moz-transition: all .3s ease;  
-    -o-transition: all .3s ease;  
-    -ms-transition: all .3s ease;  
-    transition: all .3s ease;
+    -webkit-transition: all .4s ease;  
+    -moz-transition: all .4s ease;  
+    -o-transition: all .4s ease;  
+    -ms-transition: all .4s ease;  
+    transition: all .4s ease;
     opacity: 1;
     transform: scale(1);
 }
@@ -264,7 +287,75 @@ button {
     font-weight: 500;
 }
 
-.separator {
+.separatorY {
     width: 1px;
     background-color: var(--BW-30);
+}
+
+.separatorX {
+    height: 1px;
+    background-color: var(--BW-30);
+}
+
+
+
+.profile-section {
+    padding-top: 5rem;
+    gap: 4.5rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0% 50%;
+    border-radius: 1rem;
+}
+
+
+
+.resume-grid {
+    box-sizing: border-box;
+    grid-column-gap: 3rem;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+    grid-area: span 1 / span 1 / span 1 / span 1;
+    margin-bottom: 4.5rem;
+}
+
+.resume-grid-column {
+    box-sizing: border-box;
+    grid-area: span 1 / span 1 / span 1 / span 1;
+    font-weight: 500;
+}
+
+.resume-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    
+}
+
+.resume-list-item-location {
+    color: var(--BW-50);
+    font-weight: 400;
+}
+
+
+.skill-list {
+    padding-top: 1.75rem;
+}
+
+.skill-list-label {
+    background-color: var(--BW-20);
+    border-radius: 100px;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    padding: .5rem .75rem;
+    display: inline-block;
 }

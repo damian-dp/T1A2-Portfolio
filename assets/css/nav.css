@@ -7,12 +7,7 @@ nav {
     width: fit-content;
     padding: 6px;
     gap: 4px;
-
-    animation-name: moveUp;
-    animation-duration: .4s;
-    animation-timing-function: ease;
-    animation-delay: .8s;
-    animation-fill-mode: both;
+    bottom: 40px;
 
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -21,9 +16,18 @@ nav {
     backdrop-filter: blur(24.999996185302734px);
 }
 
+.nav-animation {
+    animation-name: moveUp;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-delay: .8s;
+    animation-fill-mode: both;
+    bottom: -62px
+}
+
 @keyframes moveUp {
     from {bottom: -62px}
-    to {bottom: 60px}
+    to {bottom: 40px}
 }
 
 nav.dark {
@@ -58,9 +62,6 @@ nav.dark {
 }
 
 .navSeparator {
-    width: 1px;
     height: 28px;
-    background-color: var(--BW-30);
     margin: 0px 2px 0px 2px;
-
 }
