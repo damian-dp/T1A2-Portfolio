@@ -359,3 +359,21 @@ button {
     padding: .5rem .75rem;
     display: inline-block;
 }
+
+@media only screen and (max-width: 800px) {
+   
+    section {
+        max-width: 600px;
+    }
+
+    .resume-grid {
+        grid-row-gap: 3rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 4.5rem;
+    }
+
+    .profile-image {
+        object-position: 50% 50%;
+    }
+
+}

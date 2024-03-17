@@ -1,6 +1,7 @@
 footer {
     display: flex;
-    width: 1090px;
+    width: 100%;
+    max-width: 1090px;
     flex-direction: column;
     align-items: center;
     gap: 2.25rem;
@@ -148,4 +149,36 @@ dotlottie-player {
 
 .git {
     padding: .7rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    footer {
+        gap: 0;
+    }
+
+    .footer-directory {
+        display: none;
+    }
+
+    .footer-top {
+        padding-bottom: 1.5rem;
+    }
+
+    .footer-bottom {
+        border: none;
+        justify-content: center;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;   
+    }
+
+    .local-data {
+        display: none;
+    }
+
 }

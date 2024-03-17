@@ -65,3 +65,18 @@ nav.dark {
     height: 28px;
     margin: 0px 2px 0px 2px;
 }
+
+#projects-tab {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #projects-tab {
+        display: block;
+    }
+
+    #all-tab, #design-tab, #dev-tab{
+        display: none;
+    }
+}
