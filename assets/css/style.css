@@ -81,7 +81,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 16px 16px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -360,8 +360,75 @@ button {
     display: inline-block;
 }
 
+@media only screen and (max-width: 1100px) {
+
+    .bento-all {  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "tile-1 tile-1"
+          "tile-3 tile-4"
+          "tile-3 tile-4"
+          "tile-8 tile-8"
+          "tile-11 tile-12"
+          "tile-13 tile-13"
+          "tile-2 tile-2"
+          "tile-5 tile-6"
+          "tile-7 tile-7"
+          "tile-9 tile-10"
+          "tile-9 tile-10"
+          "tile-14 tile-14";
+        
+    }
+
+    .bento-design {  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "tile-1 tile-1"
+          "tile-3 tile-4"
+          "tile-3 tile-4"
+          "tile-8 tile-8"
+          "tile-11 tile-12"
+          "tile-13 tile-13";
+        
+    }
+
+    .bento-dev {  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "tile-1 tile-1"
+          "tile-3 tile-4"
+          "tile-3 tile-4"
+          "tile-8 tile-8"
+          "tile-11 tile-12"
+          "tile-13 tile-13";
+        
+    }
+
+    .bento-articles {  
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+          "tile-1 tile-1"
+          "tile-3 tile-4"
+          "tile-3 tile-4"
+          "tile-8 tile-8"
+          "tile-11 tile-12"
+          "tile-13 tile-13";
+        
+    }
+
+}
+
+
 @media only screen and (max-width: 800px) {
    
+    .long-tile { 
+        max-height: 350px;
+    }
+
     section {
         max-width: 600px;
     }
