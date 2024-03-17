@@ -86,6 +86,39 @@ $(document).ready(function(){
 
 
 
+/* ––––––––––––  PROJECTS TAB FADE IN  –––––––––––– */
+
+    // Trigger Fade out of all tiles and then fade in of all PROJECTS tab tiles
+
+    $("#projects-tab").click(function() {
+        
+        $(".tile").removeClass("fade-in");
+        $(".tile").addClass("fade-out");
+
+        $('#articles-tab').removeClass("current");
+
+        $('#projects-tab').addClass("current");
+
+        
+        setTimeout(function(){
+            
+            $(".bento-articles").addClass("hide");
+            $(".bento-all").removeClass("hide");
+
+        }, 400);
+
+        setTimeout(function(){
+            
+            $(".tile").removeClass("fade-out");
+            $(".tile").addClass("fade-in");
+
+        }, 500);
+
+    }); 
+/* ––––––––––––  END ALL TAB FADE IN  –––––––––––– */
+
+
+
 /* ––––––––––––  DESIGN TAB FADE IN  –––––––––––– */
 
     // Trigger Fade out of all tiles and then fade in of all DESIGN tiles
@@ -173,6 +206,7 @@ $(document).ready(function(){
         $(".tile").addClass("fade-out");
 
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
         $('#design-tab').removeClass("current");
         $('#dev-tab').removeClass("current");
 

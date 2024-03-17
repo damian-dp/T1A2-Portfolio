@@ -181,4 +181,16 @@ dotlottie-player {
         display: none;
     }
 
+    .currently-listening-widget {
+        gap: .8rem;
+    }
+
+    dotlottie-player {
+        height: 1.5rem
+    }
+
+    .social-links {
+        gap: 0.5rem;
+    }
+
 }
