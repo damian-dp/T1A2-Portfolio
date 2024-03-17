@@ -28,9 +28,9 @@ $(document).ready(function(){
 
 
 
-/* ––––––––––––  TRANSITION TO ABOUT PAGE –––––––––––– */
+/* ––––––––––––  TRANSITION TO PAGE –––––––––––– */
 
-    // Trigger Fade out of body content and then directs to About page
+    // Trigger Fade out of body content and then directs to page
 
     $(".link-delay").click(function() {
         
@@ -61,6 +61,7 @@ $(document).ready(function(){
         $('#design-tab').removeClass("current");
         $('#dev-tab').removeClass("current");
         $('#articles-tab').removeClass("current");
+        $('#about-page').removeClass("current");
 
         $('#all-tab').addClass("current");
 
@@ -96,6 +97,8 @@ $(document).ready(function(){
         $(".tile").addClass("fade-out");
 
         $('#articles-tab').removeClass("current");
+        $('#about-page').removeClass("current");
+
 
         $('#projects-tab').addClass("current");
 
@@ -130,6 +133,7 @@ $(document).ready(function(){
 
         $('#all-tab').removeClass("current");
         $('#dev-tab').removeClass("current");
+        $('#about-page').removeClass("current");
         $('#articles-tab').removeClass("current");
 
         $('#design-tab').addClass("current");
@@ -168,6 +172,7 @@ $(document).ready(function(){
 
         $('#all-tab').removeClass("current");
         $('#design-tab').removeClass("current");
+        $('#about-page').removeClass("current");
         $('#articles-tab').removeClass("current");
 
         $('#dev-tab').addClass("current");
@@ -208,6 +213,7 @@ $(document).ready(function(){
         $('#all-tab').removeClass("current");
         $('#projects-tab').removeClass("current");
         $('#design-tab').removeClass("current");
+        $('#about-page').removeClass("current");
         $('#dev-tab').removeClass("current");
 
         $('#articles-tab').addClass("current");
@@ -251,13 +257,13 @@ $(document).ready(function(){
             document.querySelector('#local-time').innerHTML = localTime;
 
             const hour = timeInMelbourne.getHours();
-            const statusDiv = document.querySelector('#current-availability-indicator');
+            // const statusDiv = document.querySelector('#current-availability-indicator');
             if (hour >= 9 && hour < 17) {
             statusDiv.style.backgroundColor = 'limegreen';
             document.querySelector('#current-availability-label').innerHTML = 'Currently available';
             } else {
-            statusDiv.style.backgroundColor = 'red';
-            document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
+            // statusDiv.style.backgroundColor = 'red';
+            // document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
             }
         })
         .catch(error => console.error(error));
@@ -338,7 +344,7 @@ $(document).ready(function(){
 /* ––––––––––––  END CURRENT YEAR for COPYRIGHT –––––––––––– */
 
 
-/* ––––––––––––  CURRENT YEAR for COPYRIGHT  –––––––––––– */
+/* ––––––––––––  DELAY LINK REDIRECT FOR TRANSITION  –––––––––––– */
 
     $('.link-delay').click(function(e) {
         e.preventDefault();
@@ -346,9 +352,9 @@ $(document).ready(function(){
         setTimeout(function(url) { window.location = url }, 800, this.href)
     });
 
-/* ––––––––––––  END CURRENT YEAR for COPYRIGHT –––––––––––– */
+/* ––––––––––––  END DELAY LINK REDIRECT FOR TRANSITION –––––––––––– */
 
 
-
+  
 
 });
