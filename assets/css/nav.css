@@ -2,6 +2,7 @@ nav {
     display: flex;
     align-items: center;
     position: sticky;
+    position: -webkit-sticky;
     z-index: 1;
     
     width: fit-content;
@@ -10,10 +11,11 @@ nav {
     bottom: 40px;
 
     border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(123deg, rgba(79, 79, 79, 0.08) 1.74%, rgba(79, 79, 79, 0.08) 1.75%, rgba(255, 255, 255, 0.08) 33.05%, rgba(79, 79, 79, 0.08) 97.16%);
-    -webkit-backdrop-filter: blur(24.999996185302734px);
-    backdrop-filter: blur(24.999996185302734px);
+    border: 1px solid rgba(209, 209, 209, 0.2);    
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(255, 255, 255, 0.77);
+    
 }
 
 .nav-animation {
@@ -28,11 +30,6 @@ nav {
 @keyframes moveUp {
     from {bottom: -62px}
     to {bottom: 40px}
-}
-
-nav.dark {
-    border: 1px solid white;
-    background: linear-gradient(123deg, rgba(79, 79, 79, 0.05) 1.74%, rgba(79, 79, 79, 0.05) 1.75%, rgba(255, 255, 255, 0.03) 33.05%, rgba(79, 79, 79, 0.05) 97.16%), rgba(0, 0, 0, 0.30);
 }
 
 .navlink {

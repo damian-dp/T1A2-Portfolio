@@ -6,9 +6,52 @@ $(document).ready(function(){
 
     // Toggle dark mode on and off when click button
 
-    document.querySelector(".logo").addEventListener("click", () => {
-        document.querySelector('nav').classList.toggle("dark");
-    })
+    // document.querySelector(".logo").addEventListener("click", () => {
+    //     document.querySelector('nav').classList.toggle("dark");
+    //     document.querySelector('body').classList.toggle("dark");
+    //     document.querySelector('.tile').classList.toggle("dark");
+    //     document.querySelector('.current').classList.toggle("dark");
+    //     document.querySelector('.logo').classList.toggle("dark");
+
+    // })
+
+
+
+    // // Get the toggle button
+    // const toggle = document.getElementById("logo");
+
+    // // Get the user's preference from localStorage
+    // const darkMode = localStorage.getItem("dark-mode");
+
+    // // Check if the user has already chosen a theme
+
+    //     if (darkMode) {
+            
+    //         // If yes, apply it to the root element
+    //         document.querySelector('nav').classList.toggle("dark");
+    //         document.querySelector('body').classList.toggle("dark");
+    //         document.querySelector('.current').classList.toggle("dark");
+    //         document.querySelector('.logo').classList.toggle("dark");            
+        
+    //     }
+            
+    //     // Add an event listener to the toggle button
+    //     toggle.addEventListener("click", () => {
+        
+    //         // Toggle the dark-theme class on the root element
+    //         document.querySelector('nav').classList.toggle("dark");
+    //         document.querySelector('body').classList.toggle("dark");
+    //         document.querySelector('.current').classList.toggle("dark");
+    //         document.querySelector('.logo').classList.toggle("dark");
+                    
+    //         // Store or remove the user's preference in localStorage
+    //         if (document.querySelector('body').classList.contains("dark")) {
+    //             localStorage.setItem("dark-mode", true);
+            
+    //         } else {
+    //             localStorage.removeItem("dark-mode");
+    //         }
+    //     });
 
 /* ––––––––––––  END TOGGLE DARK MODE  –––––––––––– */
 
@@ -36,12 +79,16 @@ $(document).ready(function(){
         
         $("section").removeClass("fade-in");
         $("section").addClass("fade-out");
+        $("article").removeClass("fade-in");
+        $("article").addClass("fade-out");
 
     });
 
     setTimeout(function(){
         
         $("section").addClass("fade-in");
+        $("article").addClass("fade-in");
+
 
     }, 200);
 
@@ -258,13 +305,13 @@ $(document).ready(function(){
 
             const hour = timeInMelbourne.getHours();
             // const statusDiv = document.querySelector('#current-availability-indicator');
-            if (hour >= 9 && hour < 17) {
-            statusDiv.style.backgroundColor = 'limegreen';
-            document.querySelector('#current-availability-label').innerHTML = 'Currently available';
-            } else {
-            // statusDiv.style.backgroundColor = 'red';
-            // document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
-            }
+            // if (hour >= 9 && hour < 17) {
+            // statusDiv.style.backgroundColor = 'limegreen';
+            // document.querySelector('#current-availability-label').innerHTML = 'Currently available';
+            // } else {
+            // // statusDiv.style.backgroundColor = 'red';
+            // // document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
+            // }
         })
         .catch(error => console.error(error));
     }, 1000);
