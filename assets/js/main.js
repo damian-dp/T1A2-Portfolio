@@ -402,6 +402,20 @@ $(document).ready(function(){
 /* ––––––––––––  END DELAY LINK REDIRECT FOR TRANSITION –––––––––––– */
 
 
+
+
+$('.tile').mouseover(function() {
+
+    $(this).find('.tile-image').css('transform', 'scale(1.08)');
+});
+
+$('.tile').mouseout(function() {
+
+    $(this).find('.tile-image').css('transform', 'scale(1)');
+});
+
+
+
   
 
 });
