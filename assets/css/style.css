@@ -453,7 +453,8 @@ article {
 }
 
 .article-image {
-    width: 100%;
+    width: 62rem;
+    height: 550px;
     object-fit: cover;
     object-position: 0% 0%;
     border-radius: .8rem;

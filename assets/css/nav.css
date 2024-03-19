@@ -11,7 +11,7 @@ nav {
     bottom: 40px;
 
     border-radius: 30px;
-    border: 1px solid rgba(209, 209, 209, 0.2);    
+    border: 1px solid rgba(203, 203, 203, 0.52);    
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     background: rgba(255, 255, 255, 0.77);
