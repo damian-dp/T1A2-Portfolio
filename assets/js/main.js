@@ -65,7 +65,7 @@ $(document).ready(function(){
             
         $(".tile").addClass("fade-in");
 
-    }, 700);
+    }, 600);
 
 /* ––––––––––––  END TILES FADE IN  –––––––––––– */
 
@@ -90,7 +90,7 @@ $(document).ready(function(){
         $("article").addClass("fade-in");
 
 
-    }, 200);
+    }, 600);
 
 /* ––––––––––––  END ALL TAB FADE IN  –––––––––––– */
 

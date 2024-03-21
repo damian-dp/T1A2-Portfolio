@@ -158,6 +158,12 @@ header {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+
+    display: flex;
+    background-color: var(--BW-10);
+    border-radius: 20px;
+    transform: scale(.98);
+    overflow: hidden;
 }
   
 .tile-2 { 
@@ -261,10 +267,46 @@ header {
     overflow: hidden;
 }
 
+
+/* ––––––––––––  TILE IMAGES  –––––––––––– */
+
+
 .hella_good-hero {
-    background: url(/assets/img/hella-good.jpg);
+    background: url(/assets/img/projects/hella-good/hella-good-1.jpg);
     /* background-position: center; */
 }
+
+.cbco-hero {
+    background: url(/assets/img/projects/cbco/cbco-1.jpg);
+    /* background-position: center; */
+}
+
+.biker_co-hero {
+    background: url(/assets/img/projects/biker-co/biker-co-1.jpeg);
+    /* background-position: center; */
+}
+
+.stalactites-hero {
+    background: url(/assets/img/projects/stalactites/stalactites-3.jpg);
+    background-position: center;
+}
+
+.wednesday_sessions-hero {
+    background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-2.png);
+    background-position: center;
+}
+
+.cohen_leigh-hero {
+    background: url(/assets/img/projects/cohen-leigh/cohen-leigh-1.jpg);
+    background-position: center;
+}
+
+
+
+
+/* ––––––––––––  END TILE IMAGES  –––––––––––– */
+
+
 
 
 
