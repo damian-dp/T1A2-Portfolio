@@ -18,14 +18,14 @@ nav {
     
 }
 
-.nav-animation {
+/* .nav-animation {
     animation-name: moveUp;
     animation-duration: .4s;
     animation-timing-function: ease;
     animation-delay: .8s;
     animation-fill-mode: both;
     bottom: -62px
-}
+} */
 
 @keyframes moveUp {
     from {bottom: -62px}
@@ -33,11 +33,11 @@ nav {
 }
 
 .navlink {
-    -webkit-transition: all .25s ease;  
-    -moz-transition: all .25s ease;  
-    -o-transition: all .25s ease;  
-    -ms-transition: all .25s ease;  
-    transition: all .25s ease;
+    -webkit-transition: background-color .25s ease, outline-color .25s ease;  
+    -moz-transition: background-color .25s ease, outline-color .25s ease;  
+    -o-transition: background-color .25s ease, outline-color .25s ease;  
+    -ms-transition: background-color .25s ease, outline-color .25s ease;  
+    transition: background-color .25s ease, outline-color .25s ease;
     padding: 14px 18px 15px 18px;
     border-radius: 90px;
     outline: .8px solid var(--whiteOpacity);
