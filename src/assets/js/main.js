@@ -2,15 +2,17 @@
 $(window).on('load', function() {
 
 
+
+
 /* ––––––––––––  TILES FADE IN  –––––––––––– */
     
     // Fade in all tiles on page load after a delat of .7s
 
-    // setTimeout(function(){
+    setTimeout(function(){
             
-    //     $(".tile").addClass("fade-in");
+        $(".tile").addClass("fade-in");
 
-    // }, 600);
+    }, 600);
 
 /* ––––––––––––  END TILES FADE IN  –––––––––––– */
 
@@ -29,6 +31,57 @@ $(window).on('load', function() {
 
     });
 
+    $('#about-page').click(function() {
+            
+        $("section").removeClass("fade-in");
+        $("section").addClass("fade-out");
+
+    });
+
+    if (window.location.href.includes("about")) {
+
+        $('#about-page').addClass("current");
+
+        $('#all-tab').addClass("link-delay");
+        $('#projects-tab').addClass("link-delay");
+        $('#design-tab').addClass("link-delay");
+        $('#dev-tab').addClass("link-delay");
+        $('#articles-tab').addClass("link-delay");
+
+                
+        $('#articles-tab').click(function() {
+            
+            $("section").removeClass("fade-in");
+            $("section").addClass("fade-out");
+
+        });
+        $('#dev-tab').click(function() {
+            
+            $("section").removeClass("fade-in");
+            $("section").addClass("fade-out");
+
+        });
+        $('#design-tab').click(function() {
+            
+            $("section").removeClass("fade-in");
+            $("section").addClass("fade-out");
+
+        });
+        $('#all-tab').click(function() {
+            
+            $("section").removeClass("fade-in");
+            $("section").addClass("fade-out");
+
+        });
+        $('#projects-tab').click(function() {
+            
+            $("section").removeClass("fade-in");
+            $("section").addClass("fade-out");
+
+        });
+        
+    }   
+  
     setTimeout(function(){
         
         $("section").addClass("fade-in");
@@ -349,21 +402,6 @@ $(window).on('load', function() {
 /* ––––––––––––  END ARTICLES TAB FADE IN  –––––––––––– */
 
 
-/* ––––––––––––  ABOUT PAGE  –––––––––––– */
-
-if (window.location.href.endsWith("about")) {
-    
-    $('#about-page').addClass("current");
-
-    $('#all-tab').addClass("link-delay");
-    $('#projects-tab').addClass("link-delay");
-    $('#design-tab').addClass("link-delay");
-    $('#dev-tab').addClass("link-delay");
-    
-}
-
-/* ––––––––––––  END ABOUT PAGE  –––––––––––– */
-
 
 
 /* ––––––––––––  LOCAL TIME WIDGET  –––––––––––– */
@@ -460,16 +498,16 @@ if (window.location.href.endsWith("about")) {
 /* ––––––––––––  END CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
 
 
-
 /* ––––––––––––  DELAY LINK REDIRECT FOR TRANSITION  –––––––––––– */
 
-    $('.link-delay').click(function(e) {
-        e.preventDefault();
-        window.scrollTo(0, 0);
-        setTimeout(function(url) { window.location = url }, 800, this.href)
-    });
+$('.link-delay').click(function(e) {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+    setTimeout(function(url) { window.location = url }, 800, this.href)
+});
 
 /* ––––––––––––  END DELAY LINK REDIRECT FOR TRANSITION –––––––––––– */
+
 
 
 

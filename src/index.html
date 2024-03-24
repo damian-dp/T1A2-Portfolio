@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/bento-grid.css" />
     
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="./components/nav/nav.css"> -->
+    <link rel="stylesheet" href="./components/nav/nav.css">
 
 </head>
 
@@ -197,8 +197,15 @@
     </section>
  
 
-    <include src="./components/nav/nav.html"></include>
-
+    <nav>
+        <a id="all-tab" class="navlink current" href="./#all">All</a>
+        <a id="design-tab" class="navlink" href="./#design">Design</a>
+        <a id="dev-tab" class="navlink" href="./#dev">Development</a>
+        <a id="projects-tab" class="navlink" href="./#all">Projects</a>
+        <a id="articles-tab" class="navlink" href="./#articles">Articles</a>
+        <div class="separatorY navSeparator"></div>
+        <a id="about-page" class="navlink" href="./about.html">About</a>
+    </nav>
 
     <include src="./components/footer/footer.html"></include>
 
