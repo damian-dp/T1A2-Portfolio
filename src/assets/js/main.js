@@ -38,9 +38,15 @@ $(window).on('load', function() {
 
     });
 
+    if (window.location.pathname === '/' || '/src') {
+
+        $('#all-tab').addClass("current");
+    }
+
     if (window.location.href.includes("about")) {
 
         $('#about-page').addClass("current");
+        $('#all-tab').removeClass("current");
 
         $('#all-tab').addClass("link-delay");
         $('#projects-tab').addClass("link-delay");

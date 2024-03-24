@@ -40,22 +40,22 @@ nav {
     transition: background-color .25s ease, outline-color .25s ease;
     padding: 14px 18px 15px 18px;
     border-radius: 90px;
-    outline: .8px solid var(--whiteOpacity);
+    /* outline: 1px solid #ffffff00; */
 }
 
 .navlink:hover {
     background: rgba(255, 255, 255, 0.30);
-    outline: .8px solid var(--BW-00);
+    /* outline: 1px solid white; */
 }
 
 .current {
     background: var(--yellowFade);
-    outline: .8px solid var(--whiteOpacity);
+    /* outline: .8px solid var(--whiteOpacity); */
 }
 
 .current:hover {
     background: var(--yellowFade);
-    outline: .8px solid var(--whiteOpacity);
+    /* outline: .8px solid var(--whiteOpacity); */
 }
 
 .navSeparator {
