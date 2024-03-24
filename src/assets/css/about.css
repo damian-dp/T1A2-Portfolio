@@ -1,0 +1,85 @@
+/* ––––––  PROFILE/HERO  –––––– */
+
+    .profile-section {
+        padding-top: 5rem;
+        gap: 4.5rem;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+        object-position: 0% 50%;
+        border-radius: 1rem;
+    }
+
+/* ––––––  END PROFILE/HERO  –––––– */
+
+
+
+/* ––––––  RESUME  –––––– */
+
+    .resume-grid {
+        box-sizing: border-box;
+        grid-column-gap: 3rem;
+        grid-row-gap: 0px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        display: grid;
+        grid-area: span 1 / span 1 / span 1 / span 1;
+        margin-bottom: 4.5rem;
+    }
+
+    .resume-grid-column {
+        box-sizing: border-box;
+        grid-area: span 1 / span 1 / span 1 / span 1;
+        font-weight: 500;
+    }
+
+    .resume-list {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        
+    }
+
+    .resume-list-item-location {
+        color: var(--BW-50);
+        font-weight: 400;
+    }
+
+    .skill-list {
+        padding-top: 1.75rem;
+    }
+
+    .skill-list-label {
+        background-color: var(--BW-20);
+        border-radius: 100px;
+        margin-bottom: .5rem;
+        margin-right: .5rem;
+        padding: .5rem .75rem;
+        display: inline-block;
+    }
+
+/* ––––––  RESUME  –––––– */
+
+
+
+/* ––––––  RESPONSIVE CSS  –––––– */
+
+    @media only screen and (max-width: 800px) {
+
+    .resume-grid {
+            grid-row-gap: 3rem;
+            grid-template-columns: 1fr;
+            margin-bottom: 4.5rem;
+        }
+
+        .profile-image {
+            object-position: 50% 50%;
+        }
+
+    }

@@ -1,0 +1,367 @@
+
+/* ––––––––––––  GRID LAYOUT  –––––––––––– */
+
+    .bento-section {
+        width: 100%;
+        max-width: 100dvw;
+    }
+
+    .bento-all {  
+        margin-bottom: 16px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "tile-1 tile-1 tile-2 tile-2"
+        "tile-3 tile-4 tile-5 tile-6"
+        "tile-3 tile-4 tile-7 tile-7"
+        "tile-8 tile-8 tile-9 tile-10"
+        "tile-11 tile-12 tile-9 tile-10"
+        "tile-13 tile-13 tile-14 tile-14";
+
+    }
+
+    .bento-design {  
+        margin-bottom: 16px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "tile-1 tile-1 tile-2 tile-2"
+        "tile-3 tile-4 tile-5 tile-6"
+        "tile-3 tile-4 tile-7 tile-7";
+
+    }
+
+    .bento-dev {  
+        margin-bottom: 16px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "tile-1 tile-1 tile-2 tile-2"
+        "tile-3 tile-4 tile-5 tile-6"
+        "tile-3 tile-4 tile-7 tile-7";
+
+    }
+
+    .bento-articles {  
+        margin-bottom: 16px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "tile-1 tile-1 tile-2 tile-2"
+        "tile-3 tile-4 tile-5 tile-6"
+        "tile-3 tile-4 tile-7 tile-7";
+
+    }
+
+/* ––––––––––––  END GRID LAYOUT  –––––––––––– */
+
+
+
+/* ––––––––––––  TILE SIZING  –––––––––––– */
+
+    .tile-1 { 
+        grid-area: tile-1;
+        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        min-height: 215px;
+        max-height: 480px;
+        display: flex;
+        padding: 0 4rem;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        display: flex;
+        background-color: var(--BW-10);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+    .tile-2 { 
+        grid-area: tile-2;
+        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+    
+    .tile-3 {  
+        grid-area: tile-3;
+        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        min-height: 446px;
+        max-height: 976px;
+
+    }
+
+    .tile-4 { 
+        grid-area: tile-4;
+        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        min-height: 446px;
+        max-height: 976px;
+    }
+
+    .tile-5 { 
+        grid-area: tile-5;
+        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-6 { 
+        grid-area: tile-6;
+        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-7 { 
+        grid-area: tile-7;
+        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-8 { 
+        grid-area: tile-8;
+        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-9 {  
+        grid-area: tile-9;
+        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        min-height: 446px;
+        max-height: 976px;
+    }
+
+    .tile-10 {  
+        grid-area: tile-10;
+        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        min-height: 446px;
+        max-height: 976px;
+    }
+
+    .tile-11 { 
+        grid-area: tile-11;
+        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-12 { 
+        grid-area: tile-12;
+        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-13 { 
+        grid-area: tile-13;
+        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-14 { 
+        grid-area: tile-14;
+        height: calc(((100dvh - 66px) * 0.33) - 22x);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile {
+        display: flex;
+        background-color: var(--BW-10);
+        border-radius: 20px;
+        transform: scale(.98);
+        opacity: 0;
+        overflow: hidden;
+    }
+
+/* ––––––––––––  END TILE SIZING  –––––––––––– */
+
+
+
+/* ––––––––––––  INTRO TILE  –––––––––––– */
+
+    .intro-copy {
+        font-weight: 500;
+    }
+
+    .line-1 {
+        color: var(--BW-50);
+        font-weight: 400;
+    }
+
+/* ––––––––––––  END INTRO TILE  –––––––––––– */
+
+
+
+/* ––––––––––––  TILE LABEL  –––––––––––– */
+
+    .tile-label {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        
+        width: 100%;
+        height:100%;
+        padding: 30px;
+        position: absolute;
+        box-sizing: border-box;
+    
+        opacity: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.10) 40%, rgba(0, 0, 0, 0.60) 100%);
+        transition: opacity .4s ease;
+
+
+        color: #ffffff;
+        font-size: 20px;
+
+    }
+
+    .tile-label:hover {
+        opacity: 1;
+        cursor: pointer;
+
+    }
+
+/* ––––––––––––  END TILE LABEL  –––––––––––– */
+
+
+
+/* ––––––––––––  TILE IMAGES  –––––––––––– */
+
+    .hella_good-hero {
+        background: url(/src/assets/img/projects/hella-good/hella-good-1.jpg);
+        /* background-position: center; */
+    }
+
+    .cbco-hero {
+        background: url(/src/assets/img/projects/cbco/cbco-1.jpg);
+        /* background-position: center; */
+    }
+
+    .biker_co-hero {
+        background: url(/src/assets/img/projects/biker-co/biker-co-1.jpeg);
+        /* background-position: center; */
+    }
+
+    .stalactites-hero {
+        background: url(/src/assets/img/projects/stalactites/stalactites-3.jpg);
+        background-position: center;
+    }
+
+    .wednesday_sessions-hero {
+        background: url(/src/assets/img/projects/wednesday-sessions/wednesday-sessions-4.png);
+        background-position: center;
+        background-color: rgb(225, 225, 225);
+    }
+
+    .cohen_leigh-hero {
+        background: url(/src/assets/img/projects/cohen-leigh/cohen-leigh-1.jpg);
+        background-position: center;
+    }
+
+    .tile-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: transform .4s ease;
+    }
+
+/* ––––––––––––  END TILE IMAGES  –––––––––––– */
+
+
+
+/* ––––––  RESPONSIVE CSS  –––––– */
+
+    @media only screen and (max-width: 1100px) {
+
+        .bento-all {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "tile-1 tile-1"
+            "tile-3 tile-4"
+            "tile-3 tile-4"
+            "tile-8 tile-8"
+            "tile-11 tile-12"
+            "tile-13 tile-13"
+            "tile-2 tile-2"
+            "tile-5 tile-6"
+            "tile-7 tile-7"
+            "tile-9 tile-10"
+            "tile-9 tile-10"
+            "tile-14 tile-14";
+            
+        }
+
+        .bento-design {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "tile-1 tile-1"
+            "tile-3 tile-4"
+            "tile-3 tile-4"
+            "tile-2 tile-2"
+            "tile-5 tile-6"
+            "tile-7 tile-7";
+            
+        }
+
+        .bento-dev {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "tile-1 tile-1"
+                "tile-3 tile-4"
+                "tile-3 tile-4"
+                "tile-2 tile-2"
+                "tile-5 tile-6"
+                "tile-7 tile-7";
+            
+        }
+
+        .bento-articles {  
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "tile-1 tile-1"
+                "tile-3 tile-4"
+                "tile-3 tile-4"
+                "tile-2 tile-2"
+                "tile-5 tile-6"
+                "tile-7 tile-7";
+            
+        }
+
+    }
+
+
+    @media only screen and (max-width: 800px) {
+    
+        .long-tile { 
+            max-height: 350px;
+        }
+
+    }
+
+/* ––––––  END RESPONSIVE CSS  –––––– */

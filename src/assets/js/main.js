@@ -2,62 +2,7 @@
 $(document).ready(function(){
 
 
-/* ––––––––––––  TOGGLE DARK MODE  –––––––––––– */
-
-    // Toggle dark mode on and off when click button
-
-    // document.querySelector(".logo").addEventListener("click", () => {
-    //     document.querySelector('nav').classList.toggle("dark");
-    //     document.querySelector('body').classList.toggle("dark");
-    //     document.querySelector('.tile').classList.toggle("dark");
-    //     document.querySelector('.current').classList.toggle("dark");
-    //     document.querySelector('.logo').classList.toggle("dark");
-
-    // })
-
-
-
-    // // Get the toggle button
-    // const toggle = document.getElementById("logo");
-
-    // // Get the user's preference from localStorage
-    // const darkMode = localStorage.getItem("dark-mode");
-
-    // // Check if the user has already chosen a theme
-
-    //     if (darkMode) {
-            
-    //         // If yes, apply it to the root element
-    //         document.querySelector('nav').classList.toggle("dark");
-    //         document.querySelector('body').classList.toggle("dark");
-    //         document.querySelector('.current').classList.toggle("dark");
-    //         document.querySelector('.logo').classList.toggle("dark");            
-        
-    //     }
-            
-    //     // Add an event listener to the toggle button
-    //     toggle.addEventListener("click", () => {
-        
-    //         // Toggle the dark-theme class on the root element
-    //         document.querySelector('nav').classList.toggle("dark");
-    //         document.querySelector('body').classList.toggle("dark");
-    //         document.querySelector('.current').classList.toggle("dark");
-    //         document.querySelector('.logo').classList.toggle("dark");
-                    
-    //         // Store or remove the user's preference in localStorage
-    //         if (document.querySelector('body').classList.contains("dark")) {
-    //             localStorage.setItem("dark-mode", true);
-            
-    //         } else {
-    //             localStorage.removeItem("dark-mode");
-    //         }
-    //     });
-
-/* ––––––––––––  END TOGGLE DARK MODE  –––––––––––– */
-
-
-
-/* ––––––––––––  TILES FADE IN  –––––––––––– */
+    /* ––––––––––––  TILES FADE IN  –––––––––––– */
     
     // Fade in all tiles on page load after a delat of .7s
 

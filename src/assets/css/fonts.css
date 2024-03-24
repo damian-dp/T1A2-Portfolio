@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/assets/fonts/NeueMontreal-Regular.otf) format('opentype');
+    src: url(/src/assets/fonts/NeueMontreal-Regular.otf) format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Neue Montreal";
-    src: url(/assets/fonts/NeueMontreal-Medium.otf) format('opentype');
+    src: url(/src/assets/fonts/NeueMontreal-Medium.otf) format('opentype');
     font-weight: 500;
     font-size: normal;
 }
 
 @font-face {
     font-family: "Mondwest";
-    src: url(/assets/fonts/Mondwest-Regular.otf) format('opentype');
+    src: url(/src/assets/fonts/Mondwest-Regular.otf) format('opentype');
     font-weight: 400;
     font-size: normal;
 }

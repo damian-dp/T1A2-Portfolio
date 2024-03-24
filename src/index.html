@@ -8,12 +8,15 @@
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/fonts.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/nav.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/dark-theme.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    
+    <link rel="stylesheet" href="./assets/css/bento-grid.css" />
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
 
 </head>
 <body>
@@ -21,7 +24,7 @@
 
     <header>
         <a href="/index.html">
-            <img class="logo" src="assets/img/header/logo-black.svg" alt="logo of the letter D">
+            <img class="logo" src="./assets/img/header/logo-black.svg" alt="logo of the letter D">
         </a>
         <button>Hire me ↗</button>
     </header>
@@ -40,7 +43,7 @@
 
             <a class="tile-2 tile" href="google.com">
                 <div class="tile-image cbco-hero"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>CBCo Brewing</h3>
                     <h3>↗</h3>
                 </div>
@@ -48,7 +51,7 @@
 
             <a class="tile-3 long-tile tile" href="google.com">
                 <div class="tile-image hella_good-hero"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -56,7 +59,7 @@
 
             <a class="tile-4 long-tile tile" href="google.com">
                 <div class="tile-image cohen_leigh-hero"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Cohen Leigh</h3>
                     <h3>↗</h3>
                 </div>
@@ -64,7 +67,7 @@
 
             <a class="tile-5 tile" href="google.com">
                 <div class="tile-image stalactites-hero"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Stalactites</h3>
                     <h3>↗</h3>
                 </div>
@@ -72,7 +75,7 @@
 
             <a class="tile-6 tile" href="google.com">
                 <div class="tile-image wednesday_sessions-hero"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Wednesday Sessions</h3>
                     <h3>↗</h3>
                 </div>
@@ -80,7 +83,7 @@
 
             <a class="tile-7 tile" href="google.com">
                 <div class="tile-image biker_co-hero"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Biker Cō</h3>
                     <h3>↗</h3>
                 </div>
@@ -88,7 +91,7 @@
 
             <a class="tile-8 tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -96,7 +99,7 @@
 
             <a class="tile-9 long-tile tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -104,7 +107,7 @@
 
             <a class="tile-10 long-tile tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -112,7 +115,7 @@
 
             <a class="tile-11 tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -120,7 +123,7 @@
 
             <a class="tile-12 tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -128,7 +131,7 @@
 
             <a class="tile-13 tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -136,7 +139,7 @@
 
             <a class="tile-14 tile" href="google.com">
                 <div class="tile-image"></div>
-                <div class="tile-title">
+                <div class="tile-label">
                     <h3>Hella Good</h3>
                     <h3>↗</h3>
                 </div>
@@ -206,7 +209,7 @@
         <a id="projects-tab" class="navlink current" href="#top">Projects</a>
         <a id="articles-tab" class="navlink" href="#top">Articles</a>
         <div class="separatorY navSeparator"></div>
-        <a id="about-page" class="navlink link-delay" href="/about.html">About</a>
+        <a id="about-page" class="navlink link-delay" href="./about.html">About</a>
     </nav>
 
     <footer>
@@ -214,7 +217,7 @@
         <div class="footer-top text-size-small">
             <div class="currently-listening-widget">
                 <div class="audio-wave">
-                    <dotlottie-player src="/assets/img/footer/audio_wave_black.json" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                    <dotlottie-player src="./assets/img/footer/audio_wave_black.json" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
                 </div>
                 <div class="currently-listening-widget-details">
                     <div>Currently Listening to</div>
@@ -223,13 +226,13 @@
             </div>
             <div class="social-links">
                 <a href="https://github.com" class="social-buttons">
-                    <img src="assets/img/footer/github-icon.svg" alt="Github icon" class="social-icons git">
+                    <img src="./assets/img/footer/github-icon.svg" alt="Github icon" class="social-icons git">
                 </a>
                 <a href="https://github.com" class="social-buttons">
-                    <img src="assets/img/footer/twitter-icon.svg" alt="Github icon" class="social-icons">
+                    <img src="./assets/img/footer/twitter-icon.svg" alt="Github icon" class="social-icons">
                 </a>
                 <a href="https://github.com" class="social-buttons linkedin">
-                    <img src="assets/img/footer/linkedin-icon.svg" alt="Github icon" class="social-icons">
+                    <img src="./assets/img/footer/linkedin-icon.svg" alt="Github icon" class="social-icons">
                 </a>
             </div>
         </div>
@@ -328,7 +331,7 @@
                 <ul class="footer-directory-column-list">
                     
                     <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Wednesday Sessions</a>
+                        <a class="footer-directory-column-link" href="./article.html"> Wednesday Sessions</a>
                     </li>
                     
                     <li class="footer-directory-column-item">
@@ -363,7 +366,7 @@
 
 
 
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 </html>

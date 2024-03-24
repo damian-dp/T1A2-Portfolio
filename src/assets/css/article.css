@@ -1,0 +1,102 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 62rem;
+    margin-bottom: 4.5rem;
+    transition: all 0.25s linear;
+    opacity: 0;
+
+}
+
+.article-header {
+    max-width: 42rem;
+    margin-bottom: 2.8rem;
+}
+
+.article-date {
+    color: var(--BW-50);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.article-title {
+    margin-bottom: 1.5rem;
+}
+
+.article-blurb {
+    margin-bottom: 2rem;
+}
+
+.article-sharesheet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: .6rem;
+}
+
+.article-sharesheet-icon {
+    width: 1.5rem;
+    opacity: .35;
+    transition: .25s;
+    padding: 0.25rem;
+}
+
+.article-sharesheet-icon:hover {
+    opacity: 1;    
+}
+
+
+.icon-linkedin {
+    width: 1.25rem;
+    padding-bottom: .3rem;
+}
+
+.icon-envelope {
+    padding-top: .45rem;
+}
+
+.icon-link {
+    padding-top: .4rem;
+    width: 1.25rem;
+}
+
+.article-image-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 62rem;
+    margin-bottom: 1rem;
+}
+
+.article-image {
+    width: 62rem;
+    height: 550px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: .8rem;
+}
+
+
+.image-caption {
+    color: var(--BW-50);
+    max-width: 42rem;
+    line-height: 1.5;
+    font-size: .8rem;
+}
+
+.article-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.1;
+    font-size: 1rem;
+}
+
+.article-para {
+    width: 100%;
+    max-width: 42rem;
+}
