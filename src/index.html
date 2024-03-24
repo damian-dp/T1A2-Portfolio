@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Petrov</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 
@@ -14,20 +15,12 @@
     <link rel="stylesheet" href="./assets/css/bento-grid.css" />
     
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/nav.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-
 
 </head>
-<body>
-    <div id="top"></div>
 
-    <header>
-        <a href="/index.html">
-            <img class="logo" src="./assets/img/header/logo-black.svg" alt="logo of the letter D">
-        </a>
-        <button>Hire me ↗</button>
-    </header>
+<body>
+
+    <include id="top" src="./components/header/header.html"></include>
 
     <section class="bento-section">
         <div class="bento-all">
@@ -202,169 +195,9 @@
      
     </section>
 
-    <nav class="nav-animation">
-        <a id="all-tab" class="navlink current" href="#top">All</a>
-        <a id="design-tab" class="navlink" href="#top">Design</a>
-        <a id="dev-tab" class="navlink" href="#top">Development</a>
-        <a id="projects-tab" class="navlink current" href="#top">Projects</a>
-        <a id="articles-tab" class="navlink" href="#top">Articles</a>
-        <div class="separatorY navSeparator"></div>
-        <a id="about-page" class="navlink link-delay" href="./about.html">About</a>
-    </nav>
+    <include src="./components/nav/nav.html"></include>
 
-    <footer>
-        
-        <div class="footer-top text-size-small">
-            <div class="currently-listening-widget">
-                <div class="audio-wave">
-                    <dotlottie-player src="./assets/img/footer/audio_wave_black.json" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
-                </div>
-                <div class="currently-listening-widget-details">
-                    <div>Currently Listening to</div>
-                    <div id="current-song">Current song name by Artist name</div>
-                </div>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com" class="social-buttons">
-                    <img src="./assets/img/footer/github-icon.svg" alt="Github icon" class="social-icons git">
-                </a>
-                <a href="https://github.com" class="social-buttons">
-                    <img src="./assets/img/footer/twitter-icon.svg" alt="Github icon" class="social-icons">
-                </a>
-                <a href="https://github.com" class="social-buttons linkedin">
-                    <img src="./assets/img/footer/linkedin-icon.svg" alt="Github icon" class="social-icons">
-                </a>
-            </div>
-        </div>
-        
-        <div class="footer-directory text-size-small">
-            
-            <div class="footer-directory-column">
-                <div class="footer-directory-column-title text-weight-medium">Get in touch</div>
-                <ul class="footer-directory-column-list">
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Contact</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> GitHub</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> LinkedIn</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Instagram</a>
-                    </li>
-
-                </ul>
-            </div>
-            
-            <div class="separatorY"></div>
-                        
-            <div class="footer-directory-column">
-                <div class="footer-directory-column-title text-weight-medium">Design Projects</div>
-                <ul class="footer-directory-column-list">
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Wednesday Sessions</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Safe & Sexy</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Facebook</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Brace Studio</a>
-                    </li>
-
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Seed & Sprout</a>
-                    </li>
-
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Monash University</a>
-                    </li>
-
-                </ul>
-            </div>         
-            
-            <div class="separatorY"></div>
-                        
-            <div class="footer-directory-column">
-                <div class="footer-directory-column-title text-weight-medium">Development Projects</div>
-                <ul class="footer-directory-column-list">
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Wednesday Sessions</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Safe & Sexy</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Facebook</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Brace Studio</a>
-                    </li>
-
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Seed & Sprout</a>
-                    </li>
-
-                </ul>
-            </div>        
-            
-            <div class="separatorY"></div>
-            
-            <div class="footer-directory-column">
-                <div class="footer-directory-column-title text-weight-medium">Articles</div>
-                <ul class="footer-directory-column-list">
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="article.html"> Wednesday Sessions</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Safe & Sexy</a>
-                    </li>
-                    
-                    <li class="footer-directory-column-item">
-                        <a class="footer-directory-column-link" href="URL"> Facebook</a>
-                    </li>
-
-                </ul>
-            </div>    
-    
-        </div>
-        
-        <div class="footer-bottom text-size-small">
-            <div class="footnote">© <span id="current-year">2000</span> Damian Petrov. All rights reserved.</div>
-            <!-- <div class="current-availability">
-                <div id="current-availability-indicator"></div>
-                <div id="current-availability-label">Currently available</div>
-            </div> -->
-            <div class="local-data">
-                <div id="local-name">Melbourne</div>
-                <div id="local-time">17:04:03</div>
-                <div id="local-temp">15°C</div>
-            </div>
-        </div>
-    
-    </footer>
-
-
-
-
+    <include src="./components/footer/footer.html"></include>
 
     <script src="./assets/js/main.js"></script>
 
