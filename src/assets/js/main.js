@@ -17,6 +17,48 @@ $(window).on('load', function() {
 /* ––––––––––––  END TILES FADE IN  –––––––––––– */
 
 
+    $("#open-contact").click(function() {
+        
+        $(".contact-overlay").removeClass("contact-animation-close");
+        $(".contact-overlay").addClass("contact-animation-open");
+
+        $("#open-contact").addClass("hide");
+        $("#close-contact").removeClass("hide");
+
+        $("body").addClass("overflow-hidden");
+
+        $(".contact-component").removeClass("hide");
+        $(".contact-component").removeClass("fade-out");
+
+        setTimeout(function(){
+            
+            $(".contact-component").addClass("fade-in");
+
+        }, 200);
+
+    });
+
+    $("#close-contact").click(function() {
+        
+        $(".contact-overlay").removeClass("contact-animation-open");
+        $(".contact-overlay").addClass("contact-animation-close");
+
+        $("#open-contact").removeClass("hide");
+        $("#close-contact").addClass("hide");
+
+        $("body").removeClass("overflow-hidden");
+
+        $(".contact-component").removeClass("fade-in");
+        $(".contact-component").addClass("fade-out");
+
+        setTimeout(function(){
+            
+            $(".contact-component").addClass("hide");
+
+        }, 350);
+
+    });
+
 
 /* ––––––––––––  TRANSITION TO PAGE –––––––––––– */
 
@@ -35,6 +77,13 @@ $(window).on('load', function() {
             
         $("section").removeClass("fade-in");
         $("section").addClass("fade-out");
+
+        $('#design-tab').removeClass("current");
+        $('#dev-tab').removeClass("current");
+        $('#articles-tab').removeClass("current");
+        $('#all-tab').removeClass("current");
+
+        $('#about-page').addClass("current");
 
     });
 
@@ -425,14 +474,14 @@ $(window).on('load', function() {
             document.querySelector('#local-time').innerHTML = localTime;
 
             const hour = timeInMelbourne.getHours();
-            // const statusDiv = document.querySelector('#current-availability-indicator');
-            // if (hour >= 9 && hour < 17) {
-            // statusDiv.style.backgroundColor = 'limegreen';
-            // document.querySelector('#current-availability-label').innerHTML = 'Currently available';
-            // } else {
-            // // statusDiv.style.backgroundColor = 'red';
-            // // document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
-            // }
+            const statusDiv = document.querySelector('#current-availability-indicator');
+            if (hour >= 9 && hour < 17) {
+            statusDiv.style.backgroundColor = 'limegreen';
+            document.querySelector('#current-availability-label').innerHTML = 'Currently available';
+            } else {
+            statusDiv.style.backgroundColor = 'red';
+            document.querySelector('#current-availability-label').innerHTML = 'Currently unavailable';
+            }
         })
         .catch(error => console.error(error));
     }, 1000);
@@ -500,6 +549,7 @@ $(window).on('load', function() {
 
     setInterval(updateCurrentSong, 10 * 1000);
     updateCurrentSong();
+
 
 /* ––––––––––––  END CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
 

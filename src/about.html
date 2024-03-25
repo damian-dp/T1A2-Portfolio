@@ -5,16 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damian Petrov | About</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-dark.png">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/htmlincludejs"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
-
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     
     <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./components/header/header.css">
+    <link rel="stylesheet" href="./components/nav/nav.css">
     
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -24,8 +26,36 @@
   
 <body>
 
-    <include id="top" src="./components/header/header.html"></include>
-    
+    <header>
+        <a href="./index.html">
+            <img class="logo" src="./assets/img/header/logo-black.svg" alt="logo of the letter D">
+        </a>
+        <div class="contact-wrapper">
+            <button id="open-contact">Hire me ↗</button>
+            <button id="close-contact" class="hide">Close</button>
+            <div class="contact-overlay">
+                <div class="contact-component hide">
+                    <h3>Let's get to work</h3>
+                    <a href="mailto:hello@damianpetrov.com" class="contact-link">
+                        <h3>hello@damianpetrov.com</h3>
+                        <div class="contact-link-icon">↗</div>
+                    </a>
+                    <div class="social-links contact-socials">
+                        <a href="https://github.com" class="social-buttons">
+                            <img src="./assets/img/footer/github-icon.svg" alt="Github icon" class="social-icons git">
+                        </a>
+                        <a href="https://github.com" class="social-buttons">
+                            <img src="./assets/img/footer/twitter-icon.svg" alt="Github icon" class="social-icons">
+                        </a>
+                        <a href="https://github.com" class="social-buttons linkedin">
+                            <img src="./assets/img/footer/linkedin-icon.svg" alt="Github icon" class="social-icons">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <section class="profile-section">
         <h3>
             Ut amet, dui imperdiet vitae convallis eu aliquet egestas. Fringilla
@@ -121,8 +151,15 @@
 
     </section>
 
-    <include src="./components/nav/nav.html"></include>
-
+    <nav>
+        <a id="all-tab" class="navlink" href="./#all">All</a>
+        <a id="design-tab" class="navlink" href="./#design">Design</a>
+        <a id="dev-tab" class="navlink" href="./#dev">Development</a>
+        <a id="projects-tab" class="navlink" href="./#all">Projects</a>
+        <a id="articles-tab" class="navlink" href="./#articles">Articles</a>
+        <div class="separatorY navSeparator"></div>
+        <a id="about-page" class="navlink" href="./about.html">About</a>
+    </nav>
 
     <include src="./components/footer/footer.html"></include>
 

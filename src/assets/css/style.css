@@ -23,7 +23,7 @@
 
 /* ––––––  HIGHLIGHT/SELECTION COLOUR  –––––– */
 
-    ::-moz-selection { /* Code for Firefox */
+    ::-moz-selection {
         color: var(--BW-95);
         background: var(--yellowFull);
     }
@@ -62,6 +62,10 @@ section {
 
 .hide {
     display: none !important;  
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
   

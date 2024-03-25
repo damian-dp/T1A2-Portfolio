@@ -9,5 +9,135 @@ header {
 }
 
 .logo {
-    width: 30px
+    width: 30px;
 }
+
+button {
+    z-index: 3;
+}
+
+header > a {
+    z-index: 3;
+}
+
+#close-contact {
+    color: white;
+    background-color: var(--BW-95);
+}
+
+.contact-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-overlay {
+    position: absolute;
+    background-color: var(--yellowFull);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    overflow: none;
+}
+
+.contact-animation-open {
+    animation-name: open;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    /* animation-delay: .8s; */
+    animation-fill-mode: both;
+}
+
+.contact-animation-close {
+    animation-name: close;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    /* animation-delay: .8s; */
+    animation-fill-mode: both;
+}
+
+@keyframes open {
+    from {
+        width: 20px;
+        height: 20px;
+    }
+    to {
+        width: 300vw;
+        height: 300vw;
+    }
+}
+
+@keyframes close {
+    from {
+        width: 300vw;
+        height: 300vw;
+    }
+    to {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.contact-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+
+    -webkit-transition: all .3s ease;  
+    -moz-transition: all .3s ease;  
+    -o-transition: all .3s ease;  
+    -ms-transition: all .3s ease;  
+    transition: all .3s ease;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-link > h3 {
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+}
+
+.contact-link-icon {
+    font-size: 1.5rem;
+    padding-top: .25rem;
+}
+
+.contact-socials {
+    position: absolute;
+    bottom: 4rem;
+}
+
+.contact-socials > .social-buttons {
+    background-color: var(--BW-95);
+    -webkit-transition: opacity .2s ease;  
+    -moz-transition: opacity .2s ease;  
+    -o-transition: opacity .2s ease;  
+    -ms-transition: opacity .2s ease;  
+    transition: opacity .2s ease;
+
+}
+
+.contact-socials > .social-buttons:hover {
+    opacity: .8;
+}
+
+.contact-socials > .social-buttons > .social-icons {
+    opacity: 1;
+    filter: invert(85%) sepia(92%) saturate(1728%) hue-rotate(9deg) brightness(105%) contrast(99%);
+}
+
+
