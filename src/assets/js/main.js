@@ -90,6 +90,8 @@ $(window).on('load', function() {
     if (window.location.pathname === '/' || '/src') {
 
         $('#all-tab').addClass("current");
+        $('#about-page').addClass("link-delay");
+
     }
 
     if (window.location.href.includes("about")) {

@@ -141,3 +141,38 @@ header > a {
 }
 
 
+
+
+
+
+
+
+
+/* ––––––  RESPONSIVE CSS  –––––– */
+
+
+@media only screen and (max-width: 800px) {
+
+    @keyframes open {
+        from {
+            width: 20px;
+            height: 20px;
+        }
+        to {
+            width: 300vh;
+            height: 300vh;
+        }
+    }
+    
+    @keyframes close {
+        from {
+            width: 300vh;
+            height: 300vh;
+        }
+        to {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}

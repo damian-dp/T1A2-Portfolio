@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Petrov</title>
-    <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-dark.png">
+    <link rel="icon" type="image/png" href="/src/assets/img/favicon/favicon-dark.png">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/htmlincludejs"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="/src/assets/css/normalize.css">
+    <link rel="stylesheet" href="/src/assets/css/fonts.css">
     
-    <link rel="stylesheet" href="./assets/css/bento-grid.css" />
-    <link rel="stylesheet" href="./components/header/header.css">
-    <link rel="stylesheet" href="./components/nav/nav.css">
+    <link rel="stylesheet" href="/src/assets/css/bento-grid.css" />
+    <link rel="stylesheet" href="/src/components/header/header.css">
+    <link rel="stylesheet" href="/src/components/nav/nav.css">
 
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="/src/assets/css/style.css">
     
 
 </head>
@@ -31,11 +32,11 @@
     <div id="articles"></div>
 
     <header>
-        <a href="./index.html">
-            <img class="logo" src="./assets/img/header/logo-black.svg" alt="logo of the letter D">
+        <a class="link-delay" href="/src/index.html">
+            <img class="logo" src="/src/assets/img/header/logo-black.svg" alt="logo of the letter D">
         </a>
         <div class="contact-wrapper">
-            <button id="open-contact">Hire me ↗</button>
+            <button id="open-contact">Hire me &nbsp;↗</button>
             <button id="close-contact" class="hide">Close</button>
             <div class="contact-overlay">
                 <div class="contact-component hide">
@@ -46,13 +47,13 @@
                     </a>
                     <div class="social-links contact-socials">
                         <a href="https://github.com/damian-dp" target="_blank" class="social-buttons">
-                            <img src="./assets/img/footer/github-icon.svg" alt="Github logo" class="social-icons git">
+                            <img src="/src/assets/img/footer/github-icon.svg" alt="Github logo" class="social-icons git">
                         </a>
                         <a href="https://www.twitter.com/damianpetrov_" target="_blank" class="social-buttons">
-                            <img src="./assets/img/footer/twitter-icon.svg" alt="Twitter logo" class="social-icons">
+                            <img src="/src/assets/img/footer/twitter-icon.svg" alt="Twitter logo" class="social-icons">
                         </a>
                         <a href="https://www.linkedin.com/in/damianpetrov/" target="_blank" class="social-buttons linkedin">
-                            <img src="./assets/img/footer/linkedin-icon.svg" alt="LinkedIn logo" class="social-icons">
+                            <img src="/src/assets/img/footer/linkedin-icon.svg" alt="LinkedIn logo" class="social-icons">
                         </a>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                 </div>
             </div>
 
-            <a class="tile-2 tile" href="google.com">
+            <a class="tile-2 tile link-delay" href="/src/projects/cbco_brewing.html">
                 <div class="tile-image cbco-hero"></div>
                 <div class="tile-label">
                     <h3>CBCo Brewing</h3>
@@ -81,7 +82,7 @@
                 </div>
             </a>
 
-            <a class="tile-3 long-tile tile" href="google.com">
+            <a class="tile-3 long-tile tile link-delay" href="/src/projects/hella_good.html">
                 <div class="tile-image hella_good-hero"></div>
                 <div class="tile-label">
                     <h3>Hella Good</h3>
@@ -89,7 +90,7 @@
                 </div>
             </a>
 
-            <a class="tile-4 long-tile tile" href="google.com">
+            <a class="tile-4 long-tile tile link-delay" href="google.com">
                 <div class="tile-image cohen_leigh-hero"></div>
                 <div class="tile-label">
                     <h3>Cohen Leigh</h3>
@@ -97,7 +98,7 @@
                 </div>
             </a>
 
-            <a class="tile-5 tile" href="google.com">
+            <a class="tile-5 tile link-delay" href="google.com">
                 <div class="tile-image stalactites-hero"></div>
                 <div class="tile-label">
                     <h3>Stalactites</h3>
@@ -105,7 +106,7 @@
                 </div>
             </a>
 
-            <a class="tile-6 tile" href="google.com">
+            <a class="tile-6 tile link-delay" href="/src/projects/wednesday_sessions.html">
                 <div class="tile-image wednesday_sessions-hero"></div>
                 <div class="tile-label">
                     <h3>Wednesday Sessions</h3>
@@ -236,18 +237,18 @@
  
 
     <nav>
-        <a id="all-tab" class="navlink" href="./#all">All</a>
-        <a id="design-tab" class="navlink" href="./#design">Design</a>
-        <a id="dev-tab" class="navlink" href="./#dev">Development</a>
-        <a id="projects-tab" class="navlink" href="./#all">Projects</a>
-        <a id="articles-tab" class="navlink" href="./#articles">Articles</a>
+        <a id="all-tab" class="navlink" href="/src/#all">All</a>
+        <a id="design-tab" class="navlink" href="/src/#design">Design</a>
+        <a id="dev-tab" class="navlink" href="/src/#dev">Development</a>
+        <a id="projects-tab" class="navlink" href="/src/#all">Projects</a>
+        <a id="articles-tab" class="navlink" href="/src/#articles">Articles</a>
         <div class="separatorY navSeparator"></div>
-        <a id="about-page" class="navlink" href="./about.html">About</a>
+        <a id="about-page" class="navlink" href="/src/about.html">About</a>
     </nav>
 
-    <include src="./components/footer/footer.html"></include>
+    <include src="/src/components/footer/footer.html"></include>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="/src/assets/js/main.js"></script>
 
 </body>
 </html>

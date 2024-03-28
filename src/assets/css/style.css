@@ -105,6 +105,12 @@ button {
     font-weight: 500;
 }
 
+.button-inactive {
+    opacity: .5;
+    background-color: var(--yellowFull);
+    cursor: not-allowed;
+}
+
 .separatorY {
     width: 1px;
     background-color: var(--BW-30);
@@ -115,6 +121,9 @@ button {
     background-color: var(--BW-30);
 }
 
+.padding-right-small {
+    margin-right: .5rem;
+}
 
 
 /* ––––––  RESPONSIVE CSS  –––––– */
