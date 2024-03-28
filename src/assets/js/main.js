@@ -81,6 +81,7 @@ $(window).on('load', function() {
     if (window.location.pathname === '/' || '/src') {
 
         $('#all-tab').addClass("current");
+        $('#projects-tab').addClass("current");
         $('#about-page').addClass("link-delay");
 
     }
