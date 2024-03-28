@@ -73,6 +73,8 @@ $(window).on('load', function() {
         $('#dev-tab').removeClass("current");
         $('#articles-tab').removeClass("current");
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
+
 
         $('#about-page').addClass("current");
 
@@ -90,6 +92,8 @@ $(window).on('load', function() {
 
         $('#design-tab').addClass("current");
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
+
 
         $('#about-page').addClass("link-delay");
         $('#all-tab').addClass("link-delay");
@@ -104,6 +108,8 @@ $(window).on('load', function() {
 
         $('#dev-tab').addClass("current");
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
+
 
         $('#about-page').addClass("link-delay");
         $('#all-tab').addClass("link-delay");
@@ -118,6 +124,8 @@ $(window).on('load', function() {
 
         $('#articles-tab').addClass("current");
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
+
 
         $('#about-page').addClass("link-delay");
         $('#all-tab').addClass("link-delay");
@@ -132,6 +140,7 @@ $(window).on('load', function() {
 
         $('#about-page').addClass("current");
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
 
         $('#all-tab').addClass("link-delay");
         $('#projects-tab').addClass("link-delay");
@@ -328,6 +337,7 @@ $(window).on('load', function() {
         $(".tile").addClass("fade-out");
 
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
         $('#dev-tab').removeClass("current");
         $('#about-page').removeClass("current");
         $('#articles-tab').removeClass("current");
@@ -396,6 +406,7 @@ $(window).on('load', function() {
         $(".tile").addClass("fade-out");
 
         $('#all-tab').removeClass("current");
+        $('#projects-tab').removeClass("current");
         $('#design-tab').removeClass("current");
         $('#about-page').removeClass("current");
         $('#articles-tab').removeClass("current");
