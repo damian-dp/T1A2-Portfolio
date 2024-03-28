@@ -58,6 +58,7 @@ header > a {
     animation-fill-mode: both;
 }
 
+
 @keyframes open {
     from {
         width: 20px;
@@ -117,7 +118,7 @@ header > a {
 }
 
 .contact-socials {
-    position: absolute;
+    position: fixed;
     bottom: 4rem;
 }
 
