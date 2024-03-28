@@ -249,33 +249,33 @@
 /* ––––––––––––  TILE IMAGES  –––––––––––– */
 
     .hella_good-hero {
-        background: url(../img/projects/hella-good/hella-good-1.jpg);
+        background: url(/assets/img/projects/hella-good/hella-good-1.jpg);
         /* background-position: center; */
     }
 
     .cbco-hero {
-        background: url(../img/projects/cbco/cbco-1.jpg);
+        background: url(/assets/img/projects/cbco/cbco-1.jpg);
         /* background-position: center; */
     }
 
     .biker_co-hero {
-        background: url(../img/projects/biker-co/biker-co-1.jpeg);
+        background: url(/assets/img/projects/biker-co/biker-co-1.jpeg);
         /* background-position: center; */
     }
 
     .stalactites-hero {
-        background: url(../img/projects/stalactites/stalactites-3.jpg);
+        background: url(/assets/img/projects/stalactites/stalactites-3.jpg);
         background-position: center;
     }
 
     .wednesday_sessions-hero {
-        background: url(../img/projects/wednesday-sessions/wednesday-sessions-4.png);
+        background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-4.png);
         background-position: center;
         background-color: rgb(225, 225, 225);
     }
 
     .cohen_leigh-hero {
-        background: url(../img/projects/cohen-leigh/cohen-leigh-1.jpg);
+        background: url(/assets/img/projects/cohen-leigh/cohen-leigh-1.jpg);
         background-position: center;
     }
 
