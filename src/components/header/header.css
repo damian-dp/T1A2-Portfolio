@@ -164,6 +164,14 @@ header > a {
 
 @media only screen and (max-width: 800px) {
 
+    .contact-animation-open {
+        animation-duration: .8s;
+    }
+    
+    .contact-animation-close {
+        animation-duration: .5s;
+    }
+
     @keyframes open {
         from {
             width: 20px;
@@ -186,4 +194,11 @@ header > a {
         }
     }
 
+    .contact-socials {
+        margin-bottom: 2rem;
+    }
+
+    .contact-spacer {
+        height: 2rem;
+    }
 }

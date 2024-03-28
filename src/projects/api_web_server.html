@@ -5,52 +5,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damian Petrov | Project</title>
-    <link rel="icon" type="image/png" href="/src/assets/img/favicon/favicon-dark.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-dark.png">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/htmlincludejs"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 
-    <link rel="stylesheet" href="/src/assets/css/normalize.css">
-    <link rel="stylesheet" href="/src/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
     
-    <link rel="stylesheet" href="/src/assets/css/project.css">
-    <link rel="stylesheet" href="/src/components/header/header.css">
-    <link rel="stylesheet" href="/src/components/nav/nav.css">
+    <link rel="stylesheet" href="/assets/css/project.css">
+    <link rel="stylesheet" href="/components/header/header.css">
+    <link rel="stylesheet" href="/components/nav/nav.css">
     
-    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
   
 </head>
   
 <body>
 
     <header>
-        <a href="/src/index.html">
-            <img class="logo" src="/src/assets/img/header/logo-black.svg" alt="logo of the letter D">
+        <a class="link-delay" href="/index.html">
+            <img class="logo" src="/assets/img/header/logo-black.svg" alt="logo of the letter D">
         </a>
         <div class="contact-wrapper">
             <button id="open-contact">Hire me &nbsp;↗</button>
             <button id="close-contact" class="hide">Close</button>
             <div class="contact-overlay">
+                
                 <div class="contact-component hide">
-                    <h3>Let's get to work</h3>
-                    <a href="mailto:hello@damianpetrov.com" class="contact-link">
-                        <h3>hello@damianpetrov.com</h3>
-                        <!-- <div class="contact-link-icon">↗</div> -->
-                    </a>
-                    <div class="social-links contact-socials">
-                        <a href="https://github.com/damian-dp" target="_blank" class="social-buttons">
-                            <img src="/src/assets/img/footer/github-icon.svg" alt="Github logo" class="social-icons git">
-                        </a>
-                        <a href="https://www.twitter.com/damianpetrov_" target="_blank" class="social-buttons">
-                            <img src="/src/assets/img/footer/twitter-icon.svg" alt="Twitter logo" class="social-icons">
-                        </a>
-                        <a href="https://www.linkedin.com/in/damianpetrov/" target="_blank" class="social-buttons linkedin">
-                            <img src="/src/assets/img/footer/linkedin-icon.svg" alt="LinkedIn logo" class="social-icons">
+                    <div class="contact-spacer"></div>
+                    <div class="contact-email">
+                        <h3>Let's get to work</h3>
+                        
+                        <a href="mailto:hello@damianpetrov.com" class="contact-link">
+                            <h3>hello@damianpetrov.com</h3>
+                            <!-- <div class="contact-link-icon">↗</div> -->
                         </a>
                     </div>
+                    
+                    <div class="social-links contact-socials">
+                        <a href="https://github.com/damian-dp" target="_blank" class="social-buttons">
+                            <img src="/assets/img/footer/github-icon.svg" alt="Github logo" class="social-icons git">
+                        </a>
+                        <a href="https://www.twitter.com/damianpetrov_" target="_blank" class="social-buttons">
+                            <img src="/assets/img/footer/twitter-icon.svg" alt="Twitter logo" class="social-icons">
+                        </a>
+                        <a href="https://www.linkedin.com/in/damianpetrov/" target="_blank" class="social-buttons linkedin">
+                            <img src="/assets/img/footer/linkedin-icon.svg" alt="LinkedIn logo" class="social-icons">
+                        </a>
+                    </div>
+                
                 </div>
+
             </div>
         </div>
     </header>
@@ -60,15 +68,21 @@
         <div class="project-header">
 
             <h2 class="project-title">
-                Project Title
+                API Web Server
             </h2>
-            <p class="project-blurb">
-                Ut amet, dui imperdiet vitae convallis eu aliquet egestas. Fringilla quisque erat convallis eu.
-                Ut fusce id quis eget varius porttitor. Dignissim massa, etiam quam velit neque sit sit ullamcorper. 
-                Risus orci malesuada sceler isque risus sagittis tincidunt commodo feugiat fermentum. Turpis atom 
-                placerat tristique commodo leo. A enim nulla non enim, tincidunt pellentesque phasellus.
-            </p>
-
+            <div class="project-blurb-wrapper">
+                <p class="project-blurb">
+                    Ut amet, dui imperdiet vitae convallis eu aliquet egestas. Fringilla quisque erat convallis eu.
+                    Ut fusce id quis eget varius porttitor. Dignissim massa, etiam quam velit neque sit sit ullamcorper. 
+                    Risus orci malesuada sceler isque risus sagittis tincidunt commodo feugiat fermentum. Turpis atom 
+                    placerat tristique commodo leo. A enim nulla non enim, tincidunt pellentesque phasellus.
+                </p>
+                <p class="project-blurb">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                    nisl ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
             <div class="separatorX"></div>
 
     
@@ -86,8 +100,8 @@
                             </div>
 
                             <div class="services-list-row">
-                                <div class="services-list-label">Sitemaps</div>
                                 <div class="services-list-label">UI Animations</div>
+                                <div class="services-list-label">Sitemaps</div>
                             </div>
                         </div>
 
@@ -100,15 +114,15 @@
                         <ul class="project-details-column-list text-size-small">
                             
                             <li class="project-details-column-item">Logo animation by
-                                <a class="project-details-column-link" href="/src/projects/cbco_brewing.html">Jane Lawry</a>
+                                <a class="project-details-column-link" href="/projects/cbco_brewing.html">Jane Lawry</a>
                             </li>
 
                             <li class="project-details-column-item">Photography by
-                                <a class="project-details-column-link" href="/src/projects/cbco_brewing.html">Samantha Allen</a>
+                                <a class="project-details-column-link" href="/projects/cbco_brewing.html">Samantha Allen</a>
                             </li>
 
                             <li class="project-details-column-item">Motion graphics by
-                                <a class="project-details-column-link" href="/src/projects/cbco_brewing.html">Gael Harkens</a>
+                                <a class="project-details-column-link" href="/projects/cbco_brewing.html">Gael Harkens</a>
                             </li>
             
                         </ul>
@@ -121,11 +135,11 @@
                         <ul class="project-details-column-list text-size-small">
                             
                             <li class="project-details-column-item">
-                                <a class="project-details-column-link" href="/src/projects/cbco_brewing.html">Live website &nbsp;↗</a>
+                                <a class="project-details-column-link" href="/projects/cbco_brewing.html">Live website &nbsp;↗</a>
                             </li>
 
                             <li class="project-details-column-item">
-                                <a class="project-details-column-link" href="/src/projects/cbco_brewing.html">Repository &nbsp;↗</a>
+                                <a class="project-details-column-link" href="/projects/cbco_brewing.html">Repository &nbsp;↗</a>
                             </li>
             
                         </ul>
@@ -138,8 +152,57 @@
 
 
         <div class="project-image-component">
-            <img class="project-image" src="/src/assets/img/projects/hella-good/hella-good-1.jpg" alt="A photo of Damian standing infront of snow capped mountains smiling to the camera"/>
-            <p class="image-caption">This is an image caption that explains what the image above is about. It can also include references if the image is sourced from someone else.</caption>
+
+            <div class="project-image-stack row">
+                <div class="project-image-stack column">
+                    <img class="project-image full" src="" alt=""/>
+                </div>
+            </div>
+
+
+            <div class="project-image-stack row">
+                <div class="project-image-stack column">
+                    <img class="project-image full" src="" alt=""/>
+                </div>
+                <div class="project-image-stack column">
+                    <img class="project-image full" src="" alt=""/>
+                </div>
+            </div>
+
+            <div class="project-image-stack row">
+                <div class="project-image-stack column">
+                    
+                    <img class="project-image half" src="" alt=""/>
+                    <img class="project-image half" src="" alt=""/>
+
+                </div>
+                <div class="project-image-stack column">
+                    <img class="project-image full" src="" alt=""/>
+                </div>
+            </div>
+
+            <div class="project-image-stack row">
+                <div class="project-image-stack column">
+                    <img class="project-image full" src="" alt=""/>
+                </div>
+            </div>
+
+            <div class="project-image-stack row">
+                <div class="project-image-stack column">
+                    <img class="project-image full" src="" alt=""/>
+                </div>
+                
+                <div class="project-image-stack column">
+                    
+                    <img class="project-image half" src="" alt=""/>
+                    <img class="project-image half" src="" alt=""/>
+
+                </div>
+            </div>
+
+
+
+
         </div>
 
     </section>
@@ -147,19 +210,19 @@
     
 
     <nav>
-        <a id="all-tab" class="navlink" href="/src/#all">All</a>
-        <a id="design-tab" class="navlink" href="/src/#design">Design</a>
-        <a id="dev-tab" class="navlink" href="/src/#dev">Development</a>
-        <a id="projects-tab" class="navlink" href="/src/#all">Projects</a>
-        <a id="articles-tab" class="navlink" href="/src/#articles">Articles</a>
+        <a id="all-tab" class="navlink" href="/#all">All</a>
+        <a id="design-tab" class="navlink" href="/#design">Design</a>
+        <a id="dev-tab" class="navlink" href="/#dev">Development</a>
+        <a id="projects-tab" class="navlink" href="/#all">Projects</a>
+        <a id="articles-tab" class="navlink" href="/#articles">Articles</a>
         <div class="separatorY navSeparator"></div>
-        <a id="about-page" class="navlink" href="/src/about.html">About</a>
+        <a id="about-page" class="navlink link-delay" href="/about.html">About</a>
     </nav>
 
-    <include src="/src/components/footer/footer.html"></include>
+    <include src="/components/footer/footer.html"></include>
 
 
-    <script src="/src/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 </html>

@@ -64,15 +64,6 @@ $(window).on('load', function() {
 
     // Trigger Fade out of body content and then directs to page
 
-    $(".link-delay").click(function() {
-        
-        $("section").removeClass("fade-in");
-        $("section").addClass("fade-out");
-        $("article").removeClass("fade-in");
-        $("article").addClass("fade-out");
-
-    });
-
     $('#about-page').click(function() {
             
         $("section").removeClass("fade-in");
@@ -91,6 +82,48 @@ $(window).on('load', function() {
 
         $('#all-tab').addClass("current");
         $('#about-page').addClass("link-delay");
+
+    }
+
+    if (window.location.href.split('/').pop().split('_').some(part => ['biker', 'hella', 'wednesday', 'cbco'].some(keyword => part.includes(keyword)))) {
+
+        $('#design-tab').addClass("current");
+        $('#all-tab').removeClass("current");
+
+        $('#about-page').addClass("link-delay");
+        $('#all-tab').addClass("link-delay");
+        $('#design-tab').addClass("link-delay");
+        $('#dev-tab').addClass("link-delay");
+        $('#articles-tab').addClass("link-delay");
+        $('#projects-tab').addClass("link-delay");
+
+    }
+
+    if (window.location.href.split('/').pop().split('_').some(part => ['api', 'full', 'portfolio', 'raw'].some(keyword => part.includes(keyword)))) {
+
+        $('#dev-tab').addClass("current");
+        $('#all-tab').removeClass("current");
+
+        $('#about-page').addClass("link-delay");
+        $('#all-tab').addClass("link-delay");
+        $('#design-tab').addClass("link-delay");
+        $('#dev-tab').addClass("link-delay");
+        $('#articles-tab').addClass("link-delay");
+        $('#projects-tab').addClass("link-delay");
+
+    }
+
+    if (window.location.href.includes("articles")) {
+
+        $('#articles-tab').addClass("current");
+        $('#all-tab').removeClass("current");
+
+        $('#about-page').addClass("link-delay");
+        $('#all-tab').addClass("link-delay");
+        $('#design-tab').addClass("link-delay");
+        $('#dev-tab').addClass("link-delay");
+        $('#articles-tab').addClass("link-delay");
+        $('#projects-tab').addClass("link-delay");
 
     }
 
@@ -146,6 +179,7 @@ $(window).on('load', function() {
 
 
     }, 600);
+
 
 /* ––––––––––––  END ALL TAB FADE IN  –––––––––––– */
 
@@ -584,15 +618,21 @@ $('.tile').mouseout(function() {
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
 
+
+
+
+$(".link-delay").click(function() {
+        
+    $("section").removeClass("fade-in");
+    $("section").addClass("fade-out");
+    $("article").removeClass("fade-in");
+    $("article").addClass("fade-out");
+
 });
 
 
-// $(window).on('load', function() {
-    
-//     /* ––––––––––––  CURRENT YEAR for COPYRIGHT  –––––––––––– */
 
-//         document.getElementById("current-year").innerHTML = new Date().getFullYear();
 
-//     /* ––––––––––––  END CURRENT YEAR for COPYRIGHT –––––––––––– */
+});
 
-// });
+

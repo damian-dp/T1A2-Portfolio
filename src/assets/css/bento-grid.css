@@ -248,43 +248,48 @@
 
 /* ––––––––––––  TILE IMAGES  –––––––––––– */
 
+    .tile-image {
+        width: 100%;
+        height: 100%;
+        transition: transform .4s ease;
+    }
+
     .hella_good-hero {
         background: url(/assets/img/projects/hella-good/hella-good-1.jpg);
+        background-size: cover;
         /* background-position: center; */
     }
 
     .cbco-hero {
         background: url(/assets/img/projects/cbco/cbco-1.jpg);
+        background-size: cover;
         /* background-position: center; */
     }
 
     .biker_co-hero {
         background: url(/assets/img/projects/biker-co/biker-co-1.jpeg);
+        background-size: cover;
         /* background-position: center; */
     }
 
-    .stalactites-hero {
-        background: url(/assets/img/projects/stalactites/stalactites-3.jpg);
+    .api-hero {
+        background: url(/assets/img/articles/api_server.png);
         background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
     }
 
     .wednesday_sessions-hero {
         background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-4.png);
-        background-position: center;
+        background-size: cover;
         background-color: rgb(225, 225, 225);
     }
 
-    .cohen_leigh-hero {
-        background: url(/assets/img/projects/cohen-leigh/cohen-leigh-1.jpg);
-        background-position: center;
-    }
-
-    .tile-image {
-        width: 100%;
-        height: 100%;
+    .css_2024-hero {
+        background: url(/assets/img/articles/css_2024.png);
         background-size: cover;
-        background-repeat: no-repeat;
-        transition: transform .4s ease;
+        background-position: center;
     }
 
 /* ––––––––––––  END TILE IMAGES  –––––––––––– */
