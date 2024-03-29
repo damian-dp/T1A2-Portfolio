@@ -6,61 +6,13 @@
         max-width: 100dvw;
     }
 
-    .bento-all {  
-        margin-bottom: 16px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 16px 16px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "tile-1 tile-1 tile-2 tile-2"
-        "tile-3 tile-4 tile-5 tile-6"
-        "tile-3 tile-4 tile-7 tile-7"
-        "tile-8 tile-8 tile-9 tile-10"
-        "tile-11 tile-12 tile-9 tile-10"
-        "tile-13 tile-13 tile-14 tile-14";
-
-    }
-
-    .bento-design {  
-        margin-bottom: 16px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 16px 16px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "tile-1 tile-1 tile-2 tile-2"
-        "tile-3 tile-4 tile-5 tile-6"
-        "tile-3 tile-4 tile-7 tile-7";
-
-    }
-
-    .bento-dev {  
-        margin-bottom: 16px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 16px 16px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "tile-1 tile-1 tile-2 tile-2"
-        "tile-3 tile-4 tile-5 tile-6"
-        "tile-3 tile-4 tile-7 tile-7";
-
-    }
-
     .bento-articles {  
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 16px 16px;
+        gap: 1rem 1rem;
         grid-auto-flow: row;
         grid-template-areas:
         "tile-1 tile-1 tile-2 tile-2"
@@ -72,12 +24,46 @@
 /* ––––––––––––  END GRID LAYOUT  –––––––––––– */
 
 
+/* ––––––––––––  INTRO TILE  –––––––––––– */
 
-/* ––––––––––––  TILE SIZING  –––––––––––– */
+.intro-copy {
+    font-weight: 500;
+}
+
+.line-1 {
+    color: var(--BW-50);
+    font-weight: 400;
+}
+
+/* ––––––––––––  END INTRO TILE  –––––––––––– */
+
+
+
+/* ––––––––––––  All TILE SIZING  –––––––––––– */
+
+    .bento-all {  
+        margin-bottom: 1rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "tile-1 tile-1 tile-2 tile-2"
+        "tile-3 tile-4 tile-5 tile-6"
+        "tile-3 tile-4 tile-7 tile-7"
+        "tile-8 tile-8 tile-9 tile-10"
+        "tile-11 tile-12 tile-9 tile-10"
+        "tile-13 tile-13 tile-14 tile-14"
+        "tile-15 tile-16 tile-17 tile-18"
+        "tile-19 tile-19 tile-17 tile-18";
+
+    }
 
     .tile-1 { 
         grid-area: tile-1;
-        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        height: calc(((100vh - 66px) * 0.33) - 20px);
         min-height: 215px;
         max-height: 480px;
         display: flex;
@@ -94,14 +80,14 @@
     
     .tile-2 { 
         grid-area: tile-2;
-        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        height: calc(((100vh - 66px) * 0.33) - 20px);
         min-height: 215px;
         max-height: 480px;
     }
     
     .tile-3 {  
         grid-area: tile-3;
-        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        height: calc((((100vh - 66px) * 0.33) * 2) - 19px);
         min-height: 446px;
         max-height: 976px;
 
@@ -109,77 +95,113 @@
 
     .tile-4 { 
         grid-area: tile-4;
-        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        height: calc((((100vh - 66px) * 0.33) * 2) - 19px);
         min-height: 446px;
         max-height: 976px;
     }
 
     .tile-5 { 
         grid-area: tile-5;
-        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        height: calc(((100vh - 66px) * 0.33) - 18px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-6 { 
         grid-area: tile-6;
-        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        height: calc(((100vh - 66px) * 0.33) - 18px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-7 { 
         grid-area: tile-7;
-        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        height: calc(((100vh - 66px) * 0.33) - 18px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-8 { 
         grid-area: tile-8;
-        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        height: calc(((100vh - 66px) * 0.33) - 20px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-9 {  
         grid-area: tile-9;
-        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        height: calc((((100vh - 66px) * 0.33) * 2) - 20px);
         min-height: 446px;
         max-height: 976px;
     }
 
     .tile-10 {  
         grid-area: tile-10;
-        height: calc(((100dvh - 66px) * 0.66) - 22px);
+        height: calc((((100vh - 66px) * 0.33) * 2) - 20px);
         min-height: 446px;
         max-height: 976px;
     }
 
     .tile-11 { 
         grid-area: tile-11;
-        height: calc(((100dvh - 66px) * 0.33) - 20px);
+        height: calc(((100vh - 66px) * 0.33) - 20px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-12 { 
         grid-area: tile-12;
-        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        height: calc(((100vh - 66px) * 0.33) - 20px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-13 { 
         grid-area: tile-13;
-        height: calc(((100dvh - 66px) * 0.33) - 22px);
+        height: calc(((100vh - 66px) * 0.33) - 20px);
         min-height: 215px;
         max-height: 480px;
     }
 
     .tile-14 { 
         grid-area: tile-14;
-        height: calc(((100dvh - 66px) * 0.33) - 22x);
+        height: calc(((100vh - 66px) * 0.33) - 20x);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-15 { 
+        grid-area: tile-15;
+        height: calc(((100vh - 66px) * 0.33) - 18px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-16 { 
+        grid-area: tile-16;
+        height: calc(((100vh - 66px) * 0.33) - 18px);
+        min-height: 215px;
+        max-height: 480px;
+    }
+
+    .tile-17 {  
+        grid-area: tile-17;
+        height: calc((((100vh - 66px) * 0.33) * 2) - 19px);
+        min-height: 446px;
+        max-height: 976px;
+
+    }
+
+    .tile-18 { 
+        grid-area: tile-18;
+        height: calc((((100vh - 66px) * 0.33) * 2) - 19px);
+        min-height: 446px;
+        max-height: 976px;
+    }
+
+    .tile-19 { 
+        grid-area: tile-19;
+        height: calc(((100vh - 66px) * 0.33) - 18px);
         min-height: 215px;
         max-height: 480px;
     }
@@ -193,22 +215,204 @@
         overflow: hidden;
     }
 
-/* ––––––––––––  END TILE SIZING  –––––––––––– */
+/* ––––––––––––  END ALL TILE SIZING  –––––––––––– */
 
 
 
-/* ––––––––––––  INTRO TILE  –––––––––––– */
+/* ––––––––––––  DESIGN TILE SIZING  –––––––––––– */
 
-    .intro-copy {
-        font-weight: 500;
-    }
+.bento-design {  
+    margin-bottom: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "tile-1        tile-1        design-tile-2 design-tile-2"
+    "design-tile-3 design-tile-4 design-tile-2 design-tile-2"
+    "design-tile-5 design-tile-5 design-tile-6 design-tile-6";
 
-    .line-1 {
-        color: var(--BW-50);
-        font-weight: 400;
-    }
+}
 
-/* ––––––––––––  END INTRO TILE  –––––––––––– */
+.design-tile-2 { 
+    grid-area: design-tile-2;
+    height: calc((((100vh - 66px) * 0.33) * 2) - 20px);
+    min-height: 215px;
+}
+
+.design-tile-3 {  
+    grid-area: design-tile-3;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+
+}
+
+.design-tile-4 { 
+    grid-area: design-tile-4;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.design-tile-5 { 
+    grid-area: design-tile-5;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.design-tile-6 { 
+    grid-area: design-tile-6;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+/* ––––––––––––  END DESIGN TILE SIZING  –––––––––––– */
+
+
+
+/* ––––––––––––  DEV TILE SIZING  –––––––––––– */
+
+.bento-dev {  
+    margin-bottom: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "tile-1     tile-1     dev-tile-2 dev-tile-3"
+    "dev-tile-4 dev-tile-6 dev-tile-2 dev-tile-3"
+    "dev-tile-5 dev-tile-6 dev-tile-7 dev-tile-7";
+
+}
+
+.dev-tile-2 { 
+    grid-area: dev-tile-2;
+    height: calc((((100vh - 66px) * 0.33) * 2) - 20px);
+    min-height: 446px;
+    max-height: 976px;
+}
+
+.dev-tile-3 {  
+    grid-area: dev-tile-3;
+    height: calc((((100vh - 66px) * 0.33) * 2) - 20px);
+    min-height: 446px;
+    max-height: 976px;
+
+}
+
+.dev-tile-4 { 
+    grid-area: dev-tile-4;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.dev-tile-5 { 
+    grid-area: dev-tile-5;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.dev-tile-6 { 
+    grid-area: dev-tile-6;
+    height: calc((((100vh - 66px) * 0.33) * 2) - 20px);
+    min-height: 446px;
+    max-height: 976px;
+}
+
+.dev-tile-7 { 
+    grid-area: dev-tile-7;
+    height: calc(((100vh - 66px) * 0.33) - 20px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+/* ––––––––––––  END DEV TILE SIZING  –––––––––––– */
+
+
+/* ––––––––––––  ARTICLE TILE SIZING  –––––––––––– */
+
+.bento-articles {  
+    margin-bottom: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "tile-1     tile-1     art-tile-2 art-tile-3"
+    "art-tile-4 art-tile-5 art-tile-6 art-tile-6"
+    "art-tile-7 art-tile-7 art-tile-8 art-tile-9";
+
+}
+
+.art-tile-2 { 
+    grid-area: art-tile-2;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.art-tile-3 {  
+    grid-area: art-tile-3;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+
+}
+
+.art-tile-4 { 
+    grid-area: art-tile-4;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.art-tile-5 { 
+    grid-area: art-tile-5;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.art-tile-6 { 
+    grid-area: art-tile-6;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.art-tile-7 { 
+    grid-area: art-tile-7;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.art-tile-8 { 
+    grid-area: art-tile-8;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+.art-tile-9 { 
+    grid-area: art-tile-9;
+    height: calc(((100vh - 66px) * 0.33) - 19px);
+    min-height: 215px;
+    max-height: 480px;
+}
+
+/* ––––––––––––  END ARTICLE TILE SIZING  –––––––––––– */
 
 
 
@@ -239,6 +443,12 @@
     .tile-label:hover {
         opacity: 1;
         cursor: pointer;
+        line-height: 1;
+
+    }
+
+    .tile-label > h3 {
+        line-height: 1.3;
 
     }
 
@@ -254,14 +464,16 @@
         transition: transform .4s ease;
     }
 
-    .hella_good-hero {
-        background: url(/assets/img/projects/hella-good/hella-good-1.jpg);
-        background-size: cover;
-        /* background-position: center; */
-    }
-
     .cbco-hero {
         background: url(/assets/img/projects/cbco/cbco-1.jpg);
+        background-size: cover;
+        /* background-position: center; */
+    }    
+
+
+
+    .hella_good-hero {
+        background: url(/assets/img/projects/hella-good/hella-good-1.jpg);
         background-size: cover;
         /* background-position: center; */
     }
@@ -269,8 +481,45 @@
     .biker_co-hero {
         background: url(/assets/img/projects/biker-co/biker-co-1.jpeg);
         background-size: cover;
-        /* background-position: center; */
+        background-position: center;
     }
+
+    
+
+    .css_2024-hero {
+        background: url(/assets/img/articles/css_2024.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .colour_theory-hero {
+        background: url();
+        background-size: cover;
+        background-position: center;
+    }
+
+  
+
+    .portfolio_website-hero {
+        background: url();
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(225, 225, 225);
+    }
+
+
+
+
+
+    .wednesday_sessions-hero {
+        background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(225, 225, 225);
+    }
+
+
+
 
     .api-hero {
         background: url(/assets/img/articles/api_server.png);
@@ -280,17 +529,52 @@
         background-color: #E6E6E6;
     }
 
-    .wednesday_sessions-hero {
-        background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-4.png);
-        background-size: cover;
-        background-color: rgb(225, 225, 225);
+    .cheat_sheet-hero {
+        background: url();
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
     }
 
-    .css_2024-hero {
-        background: url(/assets/img/articles/css_2024.png);
-        background-size: cover;
+
+
+
+    .database-hero {
+        background: url();
         background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
     }
+
+    .inspiration-hero {
+        background: url();
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
+    }
+
+
+
+
+    .full_app-hero {
+        background: url();
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
+    }
+
+    .raw_feeding-hero {
+        background: url();
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
+    }
+    
 
 /* ––––––––––––  END TILE IMAGES  –––––––––––– */
 

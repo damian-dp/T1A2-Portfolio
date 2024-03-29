@@ -1,7 +1,5 @@
- 
+
 $(window).on('load', function() {
-
-
 
 
 /* ––––––––––––  TILES FADE IN  –––––––––––– */
@@ -626,10 +624,6 @@ $('.tile').mouseout(function() {
     $(this).find('.tile-image').css('transform', 'scale(1)');
 });
 
-  
-document.getElementById("current-year").innerHTML = new Date().getFullYear();
-
-
 
 
 
@@ -645,6 +639,20 @@ $(".link-delay").click(function() {
 
 
 
+
+
+
+
 });
 
-
+$(window).on('load', function() {
+    setTimeout(function() {
+        var currentYearElement = document.getElementById("current-year");
+        if (currentYearElement) {
+            currentYearElement.innerHTML = new Date().getFullYear();
+            console.log("Year updated successfully!");
+        } else {
+            console.error("Element with ID 'current-year' not found.");
+        }
+    }, 100); // Delay in milliseconds (adjust as needed)
+});
