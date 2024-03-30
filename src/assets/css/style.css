@@ -144,3 +144,22 @@ button {
         }
 
     }
+
+
+    @media only screen and (max-width: 600px) {
+
+        h2 {
+            font-size: 1.8rem;
+            width: fit-content;
+        }
+
+
+    }
+
+
+    @media only screen and (max-width: 450px) {
+
+        
+
+
+    }
