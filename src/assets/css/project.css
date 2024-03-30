@@ -1,10 +1,13 @@
+main {
+    padding-top: 2rem;
+}
+
 .section-project-header {
     transition: all 0.25s linear;
     opacity: 0;
     width: 100%;
     max-width: fit-content;
     margin-bottom: 5rem;
-    margin-top: 2rem;
     padding: 0 4rem;
     align-items: center;
 }
@@ -233,13 +236,17 @@
         font-size: 1rem;
     }
 
+    .project-body-text {
+        padding: 1rem 4rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 700px) {
 
     .section-project-header {
         padding: 0 1rem;
-        margin-top: 5rem;
     }
 
 }
@@ -256,4 +263,30 @@
         height: 16rem;
         
     }
+
+    .collab_links-wrapper {
+        gap: 1rem;
+    }
+
+    .project-details-column {
+        width: auto;
+    }
+
+    .section-project-header {
+        padding: 0 0rem;
+    }
+
+    .project-details-column.mobile-view {
+        padding-right: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .project-body-text {
+        padding: 1rem 2em;
+    }
+
+
 }

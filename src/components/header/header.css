@@ -39,7 +39,6 @@ header > a {
     width: 20px;
     height: 20px;
     z-index: 2;
-    overflow: none;
 }
 
 .contact-animation-open {
@@ -199,15 +198,14 @@ header > a {
     }
 
     .contact-spacer {
-        height: 2rem;
+        height: 4rem;
     }
+
 }
 
 
 @media only screen and (max-width: 700px) {
 
-    header {
-        padding: 1rem 1rem;
-    }
+        
 
 }

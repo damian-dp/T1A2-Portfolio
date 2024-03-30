@@ -116,6 +116,8 @@ footer {
 
 dotlottie-player {
     height: 2rem;
+    width: 2rem;
+
 }
 
 .social-links {
@@ -186,7 +188,9 @@ dotlottie-player {
     }
 
     dotlottie-player {
-        height: 1.5rem
+        height: 1.5rem;
+        width: 1.5rem;
+
     }
 
     .social-links {

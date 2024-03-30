@@ -15,6 +15,41 @@ $(window).on('load', function() {
 /* ––––––––––––  END TILES FADE IN  –––––––––––– */
 
 
+
+/* ––––––––––––  CONTACT OVERLAY  –––––––––––– */
+
+    var openBtn = document.getElementById('open-contact');
+    var closeBtn = document.getElementById('close-contact');
+
+    openBtn.addEventListener('click', function() {
+        document.body.classList.add('noscroll');
+    });
+
+    closeBtn.addEventListener('click', function() {
+        document.body.classList.remove('noscroll');
+    });
+
+    // Prevent scrolling on touch devices
+    var touchStartY = 0;
+
+    function onTouchStart(event) {
+        touchStartY = event.touches[0].clientY;
+    }
+
+    function onTouchMove(event) {
+        var touchY = event.touches[0].clientY;
+        var touchDelta = touchY - touchStartY;
+
+        if (document.body.classList.contains('noscroll')) {
+            event.preventDefault();
+        }
+    }
+
+    document.addEventListener('touchstart', onTouchStart, { passive: false });
+    document.addEventListener('touchmove', onTouchMove, { passive: false });
+
+
+
     $("#open-contact").click(function() {
         
         $(".contact-overlay").removeClass("contact-animation-close");
@@ -22,8 +57,6 @@ $(window).on('load', function() {
 
         $("#open-contact").addClass("hide");
         $("#close-contact").removeClass("hide");
-
-        $("body").addClass("overflow-hidden");
 
         $(".contact-component").removeClass("hide");
         $(".contact-component").removeClass("fade-out");
@@ -44,8 +77,6 @@ $(window).on('load', function() {
         $("#open-contact").removeClass("hide");
         $("#close-contact").addClass("hide");
 
-        $("body").removeClass("overflow-hidden");
-
         $(".contact-component").removeClass("fade-in");
         $(".contact-component").addClass("fade-out");
 
@@ -56,6 +87,9 @@ $(window).on('load', function() {
         }, 350);
 
     });
+
+/* ––––––––––––  ENDCONTACT OVERLAY  –––––––––––– */
+
 
 
 /* ––––––––––––  TRANSITION TO PAGE –––––––––––– */
@@ -608,24 +642,6 @@ $('.link-delay').click(function(e) {
     setTimeout(function(url) { window.location = url }, 800, this.href)
 });
 
-/* ––––––––––––  END DELAY LINK REDIRECT FOR TRANSITION –––––––––––– */
-
-
-
-
-
-$('.tile').mouseover(function() {
-
-    $(this).find('.tile-image').css('transform', 'scale(1.08)');
-});
-
-$('.tile').mouseout(function() {
-
-    $(this).find('.tile-image').css('transform', 'scale(1)');
-});
-
-
-
 
 $(".link-delay").click(function() {
         
@@ -636,8 +652,70 @@ $(".link-delay").click(function() {
 
 });
 
+/* ––––––––––––  END DELAY LINK REDIRECT FOR TRANSITION –––––––––––– */
 
 
+
+/* ––––––––––––  HOVER TILE IMAGE SCALE –––––––––––– */
+
+    $('.tile').mouseover(function() {
+
+        $(this).find('.tile-image').css('transform', 'scale(1.08)');
+    });
+
+    $('.tile').mouseout(function() {
+
+        $(this).find('.tile-image').css('transform', 'scale(1)');
+    });
+
+/* ––––––––––––  END HOVER TILE IMAGE SCALE –––––––––––– */
+
+
+
+/* ––––––––––––  TILE LABEL VIEWABLE ON SCROLL  –––––––––––– */
+
+    // Check if the device supports touch input
+    function isTouchDevice() {
+        return 'ontouchstart' in window || navigator.maxTouchPoints;
+    }
+
+    // Function to check if an element's position is within the active area
+    function isInActiveArea(element) {
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        const elementRect = element.getBoundingClientRect();
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        const elementBottom = elementRect.bottom + scrollPosition;
+        const thresholdTop = scrollPosition + (14 * parseFloat(getComputedStyle(document.documentElement).fontSize)); // 10rem from the top
+        const thresholdBottom = scrollPosition + viewportHeight - (6 * parseFloat(getComputedStyle(document.documentElement).fontSize)); // 20rem from the bottom
+
+        return (
+            (elementBottom > thresholdTop && elementBottom < thresholdBottom)
+        );
+    }
+
+    // Toggle active class based on whether the element is in the active area and on a touch device
+    function toggleActiveClass() {
+        const isTouch = isTouchDevice();
+        if (!isTouch) return; // Exit if not a touch device
+
+        const tileLabels = document.querySelectorAll('.tile-label');
+        tileLabels.forEach(function(tileLabel) {
+            if (isInActiveArea(tileLabel)) {
+                tileLabel.classList.add('active');
+            } else {
+                tileLabel.classList.remove('active');
+            }
+        });
+    }
+
+    // Initial call to toggleActiveClass to set initial state
+    toggleActiveClass();
+
+    // Add event listener for scroll and resize to continuously check if elements are in viewport
+    window.addEventListener('scroll', toggleActiveClass);
+    window.addEventListener('resize', toggleActiveClass);
+
+/* ––––––––––––  END TILE LABEL VIEWABLE ON SCROLL  –––––––––––– */
 
 
 
@@ -645,14 +723,20 @@ $(".link-delay").click(function() {
 
 });
 
-$(window).on('load', function() {
-    setTimeout(function() {
-        var currentYearElement = document.getElementById("current-year");
-        if (currentYearElement) {
-            currentYearElement.innerHTML = new Date().getFullYear();
-            console.log("Year updated successfully!");
-        } else {
-            console.error("Element with ID 'current-year' not found.");
-        }
-    }, 100); // Delay in milliseconds (adjust as needed)
-});
+
+
+/* ––––––––––––  CURRENT YEAR FOR FOOTER COPYRIGHT  –––––––––––– */
+
+    $(window).on('load', function() {
+        setTimeout(function() {
+            var currentYearElement = document.getElementById("current-year");
+            if (currentYearElement) {
+                currentYearElement.innerHTML = new Date().getFullYear();
+                console.log("Year updated successfully!");
+            } else {
+                console.error("Element with ID 'current-year' not found.");
+            }
+        }, 100); // Delay in milliseconds (adjust as needed)
+    });
+
+/* ––––––––––––  END CURRENT YEAR FOR FOOTER COPYRIGHT  –––––––––––– */

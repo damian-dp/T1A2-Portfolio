@@ -449,6 +449,10 @@
 
     }
 
+    .tile-label.active {
+        opacity: 1;
+    }
+
     .tile-label > h3 {
         line-height: 1.3;
 
@@ -731,12 +735,27 @@
     @media only screen and (max-width: 600px) {
 
         .tile-1 {
-            /* background-color: var(--whiteOpacity); */
             padding: 4rem 3.5rem;
-
             height: auto;
             min-height: auto;
             max-height: auto;
+        }
+
+        
+
+
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        .tile-1 {
+            background-color: var(--whiteOpactiy);
+            padding: 0rem 0rem 2rem 0rem;
+            overflow: visible;
+        }
+
+        .intro-copy {
+            font-size: 1.8rem;
         }
 
         

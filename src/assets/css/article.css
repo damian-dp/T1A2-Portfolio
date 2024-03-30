@@ -1,3 +1,7 @@
+main {
+    padding-top: 2rem;
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -18,7 +22,7 @@ article {
     color: var(--BW-50);
     font-weight: 500;
     font-size: 1.25rem;
-    margin: 1rem 0 1rem 0;
+    margin: 0rem 0 1rem 0;
 }
 
 .article-title {
@@ -75,7 +79,7 @@ article {
 }
 
 .article-image {
-    width: 62rem;
+    width: 100%;
     height: 550px;
     object-fit: cover;
     object-position: 0% 0%;
@@ -101,4 +105,20 @@ article {
 .article-para {
     width: 100%;
     max-width: 42rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .article-date {
+        font-size: 1.1rem;
+    }
+
+    
+
+
+
 }

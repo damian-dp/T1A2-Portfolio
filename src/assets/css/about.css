@@ -1,7 +1,10 @@
+main {
+    padding-top: 2rem;
+}
+
 /* ––––––  PROFILE/HERO  –––––– */
 
     .section-about-profile {
-        padding-top: 2rem;
         gap: 4.5rem;
     }
 
@@ -41,6 +44,9 @@
         box-sizing: border-box;
         grid-area: span 1 / span 1 / span 1 / span 1;
         font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .resume-list {
@@ -48,7 +54,6 @@
         flex-direction: column;
         gap: .5rem;
         width: 100%;
-        margin-top: 1.5rem;
         
     }
 
@@ -83,14 +88,54 @@
 
     @media only screen and (max-width: 800px) {
 
-    .resume-grid {
-            grid-row-gap: 3rem;
-            grid-template-columns: 1fr;
-            margin-bottom: 4.5rem;
+        .profile-image {
+            object-position: 3%;
         }
 
-        .profile-image {
-            object-position: 50% 50%;
+        .section-about-profile {
+            gap: 2.5rem;
         }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+
+        .resume-grid {
+            grid-row-gap: 3rem;
+            grid-template-columns: 1fr;
+            margin-bottom: 3rem;
+        }
+
+        #fake-title {
+            display: none;
+        }
+
+        .section-about-profile {
+            margin-bottom: 3rem;
+        }
+
+        
+
+    }
+
+
+    @media only screen and (max-width: 500px) {
+
+        .profile-image {
+            object-position: 12%;
+        }
+        
+        
+
+
+    }
+
+
+    @media only screen and (max-width: 400px) {
+
+        .profile-image {
+            object-position: 18%;
+        }
+        
 
     }

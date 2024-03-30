@@ -77,4 +77,8 @@ nav {
     #all-tab, #design-tab, #dev-tab{
         display: none;
     }
+
+    nav {
+        bottom: 25px;
+    }
 }
