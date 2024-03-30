@@ -1,6 +1,6 @@
 /* ––––––  PROFILE/HERO  –––––– */
 
-    .profile-section {
+    .section-about-profile {
         padding-top: 2rem;
         gap: 4.5rem;
     }
@@ -15,10 +15,11 @@
 
 /* ––––––  END PROFILE/HERO  –––––– */
 
-.about-section {
+.section-about-resume {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 
 /* ––––––  RESUME  –––––– */
@@ -69,12 +70,9 @@
         display: inline-block;
     }
 
-    .resume-cta {
-        display: flex;
-        flex-direction: column;
+    .section-about-resume_cta {
         align-items: center;
         gap: 4rem;
-        width: 100%;
     }
 
 /* ––––––  RESUME  –––––– */

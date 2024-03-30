@@ -1,7 +1,7 @@
 
 /* ––––––––––––  GRID LAYOUT  –––––––––––– */
 
-    .bento-section {
+    .section-bento {
         width: 100%;
         max-width: 100dvw;
     }
@@ -588,18 +588,22 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas:
-            "tile-1 tile-1"
-            "tile-3 tile-4"
-            "tile-3 tile-4"
-            "tile-8 tile-8"
-            "tile-11 tile-12"
-            "tile-13 tile-13"
-            "tile-2 tile-2"
-            "tile-5 tile-6"
-            "tile-7 tile-7"
-            "tile-9 tile-10"
-            "tile-9 tile-10"
-            "tile-14 tile-14";
+                "tile-1 tile-1"
+                "tile-3 tile-4"
+                "tile-3 tile-4"
+                "tile-8 tile-8"
+                "tile-11 tile-12"
+                "tile-13 tile-13"
+                "tile-15 tile-16"
+                "tile-19 tile-19"
+                "tile-2 tile-2"
+                "tile-5 tile-6"
+                "tile-7 tile-7"
+                "tile-9 tile-10"
+                "tile-9 tile-10"
+                "tile-14 tile-14"
+                "tile-17 tile-18"
+                "tile-17 tile-18";
             
         }
 
@@ -607,25 +611,23 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas:
-            "tile-1 tile-1"
-            "tile-3 tile-4"
-            "tile-3 tile-4"
-            "tile-2 tile-2"
-            "tile-5 tile-6"
-            "tile-7 tile-7";
-            
+                "tile-1        tile-1"
+                "design-tile-3 design-tile-4"
+                "design-tile-5 design-tile-5"
+                "design-tile-2 design-tile-2"
+                "design-tile-6 design-tile-6";
         }
 
         .bento-dev {  
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas:
-                "tile-1 tile-1"
-                "tile-3 tile-4"
-                "tile-3 tile-4"
-                "tile-2 tile-2"
-                "tile-5 tile-6"
-                "tile-7 tile-7";
+                "tile-1     tile-1"
+                "dev-tile-4 dev-tile-6"
+                "dev-tile-5 dev-tile-6"
+                "dev-tile-2 dev-tile-3"
+                "dev-tile-2 dev-tile-3"
+                "dev-tile-7 dev-tile-7";
             
         }
 
@@ -633,13 +635,12 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-template-areas:
-                "tile-1 tile-1"
-                "tile-3 tile-4"
-                "tile-3 tile-4"
-                "tile-2 tile-2"
-                "tile-5 tile-6"
-                "tile-7 tile-7";
-            
+                "tile-1     tile-1   "
+                "art-tile-4 art-tile-5"
+                "art-tile-7 art-tile-7"
+                "art-tile-2 art-tile-3"
+                "art-tile-6 art-tile-6"
+                "art-tile-8 art-tile-9";
         }
 
     }

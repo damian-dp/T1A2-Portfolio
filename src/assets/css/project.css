@@ -1,14 +1,6 @@
-.project-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 68rem;
+.section-project-header {
     transition: all 0.25s linear;
     opacity: 0;
-
-}
-
-.project-header {
     max-width: 52rem;
     margin-bottom: 5rem;
     margin-top: 2rem;
@@ -20,11 +12,12 @@
 }
 
 .project-blurb-wrapper {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .project-blurb {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
     line-height: 1.7;
     font-size: 1.15rem;
     color: var(--BW-60);
@@ -86,16 +79,16 @@
 }
 
 
-
-
-
-.project-image-component {
+.section-project-images {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 1rem;
     gap: 1rem;
+    max-width: 68rem;
+    transition: all 0.25s linear;
+    opacity: 0;
+    padding-bottom: 1rem;
 }
 
 .project-image-stack {
