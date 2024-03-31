@@ -3,66 +3,25 @@
   
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Damian Petrov | About</title>
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-dark.png">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/htmlincludejs"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/fonts.css">
     
     <link rel="stylesheet" href="/assets/css/about.css" />
-    <link rel="stylesheet" href="/components/header/header.css">
-    <link rel="stylesheet" href="/components/nav/nav.css">
     
     <link rel="stylesheet" href="/assets/css/style.css">
-
-
-  
 </head>
   
 <body>
 
-    <header>
-        <a class="link-delay" href="/index.html">
-            <img class="logo" src="/assets/img/header/logo-black.svg" alt="logo of the letter D">
-        </a>
-        <div class="contact-wrapper">
-            <button id="open-contact">Hire me &nbsp;↗</button>
-            <button id="close-contact" class="hide">Close</button>
-            <div class="contact-overlay">
-                
-                <div class="contact-component hide">
-                    <div class="contact-spacer"></div>
-                    <div class="contact-email">
-                        <h3>Let's get to work</h3>
-                        
-                        <a href="mailto:hello@damianpetrov.com" class="contact-link">
-                            <h3>hello@damianpetrov.com</h3>
-                            <!-- <div class="contact-link-icon">↗</div> -->
-                        </a>
-                    </div>
-                    
-                    <div class="social-links contact-socials">
-                        <a href="https://github.com/damian-dp" target="_blank" class="social-buttons">
-                            <img src="/assets/img/footer/github-icon.svg" alt="Github logo" class="social-icons git">
-                        </a>
-                        <a href="https://www.twitter.com/damianpetrov_" target="_blank" class="social-buttons">
-                            <img src="/assets/img/footer/twitter-icon.svg" alt="Twitter logo" class="social-icons">
-                        </a>
-                        <a href="https://www.linkedin.com/in/damianpetrov/" target="_blank" class="social-buttons linkedin">
-                            <img src="/assets/img/footer/linkedin-icon.svg" alt="LinkedIn logo" class="social-icons">
-                        </a>
-                    </div>
-                
-                </div>
-
-            </div>
-        </div>
-    </header>
+    <!-- Inject Header component HTML file using JavaScript -->
+    <div id="headerComponent"></div>
     
     <main>
 
@@ -212,19 +171,16 @@
 
     </main>
 
-    <nav>
-        <a id="all-tab" class="navlink" href="/#all">All</a>
-        <a id="design-tab" class="navlink" href="/#design">Design</a>
-        <a id="dev-tab" class="navlink" href="/#dev">Development</a>
-        <a id="projects-tab" class="navlink" href="/#all">Projects</a>
-        <a id="articles-tab" class="navlink" href="/#articles">Articles</a>
-        <div class="separatorY navSeparator"></div>
-        <a id="about-page" class="navlink" href="/about.html">About</a>
-    </nav>
+    <!-- Inject Nav component HTML file using JavaScript -->
+    <div id="navComponent"></div>
 
-    <include src="/components/footer/footer.html"></include>
+    <!-- Inject footer component HTML file using JavaScript -->
+    <div id="footerComponent"></div>
 
+    <!-- JS script that manages component injects -->
+    <script src="/assets/js/injectComponents.js"></script>
 
+    <!-- JS script that manages global JS functions -->
     <script src="/assets/js/main.js"></script>
 
   

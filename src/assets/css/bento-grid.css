@@ -515,15 +515,12 @@
 
 
 
-
-
     .wednesday_sessions-hero {
         background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-1.jpg);
         background-size: cover;
         background-position: center;
         background-color: rgb(225, 225, 225);
     }
-
 
 
 
@@ -545,7 +542,6 @@
 
 
 
-
     .database-hero {
         background: url();
         background-position: center;
@@ -561,7 +557,6 @@
         background-repeat: no-repeat;
         background-color: #E6E6E6;
     }
-
 
 
 
@@ -581,7 +576,6 @@
         background-color: #E6E6E6;
     }
     
-
 /* ––––––––––––  END TILE IMAGES  –––––––––––– */
 
 
@@ -740,9 +734,6 @@
             min-height: auto;
             max-height: auto;
         }
-
-        
-
 
     }
 

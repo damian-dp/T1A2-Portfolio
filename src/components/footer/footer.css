@@ -1,3 +1,9 @@
+#footerComponent {
+    width: 100%;
+    max-width: 1090px;
+
+}
+
 footer {
     display: flex;
     width: 100%;

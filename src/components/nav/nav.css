@@ -1,3 +1,9 @@
+#navComponent {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 40px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -79,6 +85,10 @@ nav {
     }
 
     nav {
-        bottom: 25px;
+        bottom: 15px;
+    }
+
+    #navComponent {
+        bottom: 15px;
     }
 }
