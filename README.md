@@ -12,8 +12,12 @@ The primary target audience for this website consists of recruiters and hiring m
 
 
 ## **Links**
+
 - [Published portfolio website](https://damianp-portfolio.netlify.app)
+
 - [GitHub repo](https://github.com/damian-dp/T1A2-Portfolio)
+
+- [Figma designs](https://www.figma.com/file/Lk188DcCVh4HLTtE9fS3BV/T1A2-Portfolio?type=design&node-id=82%3A141&mode=design&t=0PvZsYEpJ66hi1fp-1)
 </br>
 </br>
 
