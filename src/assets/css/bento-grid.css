@@ -56,10 +56,7 @@
         "tile-3 tile-4 tile-5 tile-6"
         "tile-3 tile-4 tile-7 tile-7"
         "tile-8 tile-8 tile-9 tile-10"
-        "tile-11 tile-12 tile-9 tile-10"
-        "tile-13 tile-13 tile-14 tile-14"
-        "tile-15 tile-16 tile-17 tile-18"
-        "tile-19 tile-19 tile-17 tile-18";
+        "tile-11 tile-12 tile-9 tile-10";
 
     }
 
@@ -234,7 +231,7 @@
     grid-template-areas:
     "tile-1        tile-1        design-tile-2 design-tile-2"
     "design-tile-3 design-tile-4 design-tile-2 design-tile-2"
-    "design-tile-5 design-tile-5 design-tile-6 design-tile-6";
+    "design-tile-6 design-tile-6 design-tile-5 design-tile-5";
 
 }
 
@@ -471,7 +468,7 @@
     }
 
     .cbco-hero {
-        background: url(/assets/img/projects/cbco/cbco-1.jpg);
+        background: url(/assets/img/projects/design/cbco/cbco-1.jpg);
         background-size: cover;
         /* background-position: center; */
     }    
@@ -479,13 +476,13 @@
 
 
     .hella_good-hero {
-        background: url(/assets/img/projects/hella-good/hella-good-1.jpg);
+        background: url(/assets/img/projects/design/hella-good/hella-good-1.jpg);
         background-size: cover;
         /* background-position: center; */
     }
 
     .biker_co-hero {
-        background: url(/assets/img/projects/biker-co/biker-co-1.jpeg);
+        background: url(/assets/img/projects/design/biker-co/biker-co-1.jpeg);
         background-size: cover;
         background-position: center;
     }
@@ -493,13 +490,13 @@
     
 
     .css_2024-hero {
-        background: url(/assets/img/articles/css_2024.png);
+        background: url(/assets/img/articles/native-css.png);
         background-size: cover;
         background-position: center;
     }
 
     .colour_theory-hero {
-        background: url();
+        background: url(/assets/img/articles/bg-5.jpeg);
         background-size: cover;
         background-position: center;
     }
@@ -507,7 +504,7 @@
   
 
     .portfolio_website-hero {
-        background: url();
+        background: url(/assets/img/projects/design/cohen-leigh/cohen-leigh-1.jpg);
         background-size: cover;
         background-position: center;
         background-color: rgb(225, 225, 225);
@@ -516,7 +513,7 @@
 
 
     .wednesday_sessions-hero {
-        background: url(/assets/img/projects/wednesday-sessions/wednesday-sessions-1.jpg);
+        background: url(/assets/img/projects/design/wednesday-sessions/wednesday-sessions-1.jpg);
         background-size: cover;
         background-position: center;
         background-color: rgb(225, 225, 225);
@@ -525,7 +522,7 @@
 
 
     .api-hero {
-        background: url(/assets/img/articles/api_server.png);
+        background: url(/assets/img/articles/app-or-web.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -533,9 +530,9 @@
     }
 
     .cheat_sheet-hero {
-        background: url();
+        background: url(/assets/img/articles/bg-2.jpeg);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-color: #E6E6E6;
     }
@@ -543,17 +540,25 @@
 
 
     .database-hero {
-        background: url();
+        background: url(/assets/img/articles/dev-info-1.jpg);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-color: #E6E6E6;
     }
 
     .inspiration-hero {
-        background: url();
+        background: url(/assets/img/articles/bg-3.jpeg);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
+    }
+
+    .inspiration-2-hero {
+        background: url(/assets/img/articles/dev-info-2.jpg);
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         background-color: #E6E6E6;
     }
@@ -561,17 +566,25 @@
 
 
     .full_app-hero {
-        background: url();
+        background: url(/assets/img/projects/dev/full-stack-app/full-app-2.jpg);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-color: #E6E6E6;
     }
 
     .raw_feeding-hero {
-        background: url();
+        background: url(/assets/img/projects/dev/raw-feeding/raw-feeding.jpeg);
         background-position: center;
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #E6E6E6;
+    }
+
+    .ws-2-hero {
+        background: url(/assets/img/projects/design/wednesday-sessions/wednesday-sessions-4.png);
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         background-color: #E6E6E6;
     }
@@ -593,17 +606,11 @@
                 "tile-3 tile-4"
                 "tile-8 tile-8"
                 "tile-11 tile-12"
-                "tile-13 tile-13"
-                "tile-15 tile-16"
-                "tile-19 tile-19"
                 "tile-2 tile-2"
                 "tile-5 tile-6"
                 "tile-7 tile-7"
                 "tile-9 tile-10"
-                "tile-9 tile-10"
-                "tile-14 tile-14"
-                "tile-17 tile-18"
-                "tile-17 tile-18";
+                "tile-9 tile-10";
             
         }
 
@@ -671,14 +678,7 @@
                 "tile-9"
                 "tile-10"
                 "tile-11"
-                "tile-12"
-                "tile-13"
-                "tile-14"
-                "tile-15"
-                "tile-16"
-                "tile-17"
-                "tile-18"
-                "tile-19";
+                "tile-12";
             
         }
 

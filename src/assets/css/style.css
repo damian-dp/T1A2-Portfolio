@@ -124,7 +124,10 @@ section {
     display: none !important;  
 }
 
-  
+#headerComponent {
+    width: 100%;
+}
+
 .fade-out {
     -webkit-transition: all .3s ease;  
     -moz-transition: all .3s ease;  
