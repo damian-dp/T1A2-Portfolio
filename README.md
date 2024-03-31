@@ -33,14 +33,32 @@ The key functionality and features of my portfolio website are:
 
 </br>
 
-- designed with a **mobile first** approach, using multiple break points to have suitable adapted layouts for various screen sizes
-- designed with **accessibility** at front of mind:
-    - a simplistic layout that does not cause sensory overload
-    - alt text on all visual elements
-    - colour palette designed to have meaning, even for those who are colour blind
-    - semantic elements used when building layout
 
-As I had already developed a similar website for my Diversity in Tech scholarship application, I have linked to the original website from my portfolio to demonstrate my growth since beginning this course.
+- **Footer Widgets** – a personal touch
+
+    - Currently Listening - A cool little script that captures what I am currently listening to on Spotify in real time and displays it in the footer of my website.
+
+    - Local Time & Weather - A small feature that displays the current time and tempreture of my current location. This feature is great to show international audience the current time and if they should expect a fast respnse or if it's 3am in the morning for me!
+
+</br>
+
+- **Animations and Interactions** – Smooth as butter (sometimes)
+
+    - Hover Animations - There are subtle fades on all links that depict clearly to the user when a link is being targeted. This also includes the tiles that on hover reavelas the tile's label. The tile hover animations are even translated into the mobile version so key label information is not hidden due to the lack of hover function on touch devices.
+
+    - Page Transitions - Subtle fade in and outs on elements and entrie sections when navigating between pages creates a more seamless less abrupt experience and displays a level of polish that hopfuly impresses the target auidence.
+
+</br>
+
+- **Accessibility**
+
+    - Simple Design and Layout - A simple design, that isnt busy or difficult to understand and navigate. The inclusion of a full site link list in the footer also provides a fail safe incase someone is unable to navigate the beto tiles comfortably.
+
+    - Colour - Simple colour pallet that is concious of contrast.
+
+    - Alt Text - Descriptive alt text added to all visual elements.
+
+    - Semantic Tags - Used throughout the site to aid screenreaders in understanding my site.
 </br>
 </br>
 
@@ -65,7 +83,7 @@ Through the entire process from planning to deployment I used the following tech
 
 ## **Sitemap**
 
-This sitemap image was developed prior to commencing any coding, and remained consistent as I developed the website in terms of the structure and flow of the pages:
+The sitemap image was crafted prior to diving into any coding tasks. Throughout the development process, its structure and page flow remained unchanged, serving as a solid guide.
 
 ![Image of the sitemap for all pages](/docs/img/sitemap.png)
 </br>
@@ -76,15 +94,21 @@ This sitemap image was developed prior to commencing any coding, and remained co
 
 ## **Wireframes**
 
-Basic wireframes for each page were created in Figma prior to commencing coding. Each page has 3 versions of the wireframe for various breakpoints:
+Wireframes where designed based on the sitemap structure. I designed three breakpoints for the following devices:
+
 - Mobile
 - Tablet
 - Desktop
 
-These wireframes are high level and not indicatative of margins, padding, font sizes, etc. to be used - but rather than overall placement of elements. The key similarities across all pages are:
-- **Mobile view** only has a logo in the top-left of the header, along with a hamburger menu for navigation
-- **Tablet view** expands to add my name next to the logo (similar to what will show on desktop view), but retains the hamburger navigation menu
-- **Desktop view** takes advantage of the larger width to have the navigation bar visible in a row in the top-right of the header
+</br>
+
+In defining these wireframes I began to understand the similarities across the pages and the repeatable components that will be used, including:
+
+- Nav Bar
+- Header
+- Footer
+
+I also discovered how the nav bar and footer would best 'shrink' for smaller device sizes. Making the website design less dense and heavy on smaller screens.
 </br>
 </br>
 
@@ -105,10 +129,7 @@ These wireframes are high level and not indicatative of margins, padding, font s
 
 
 ## **Design**
-Basic wireframes for each page were created in Figma prior to commencing coding. Each page has 3 versions of the wireframe for various breakpoints:
-- Mobile
-- Tablet
-- Desktop
+A simple pallet and typography exploration was done to understand the aesthetic of the site
 </br>
 </br>
 
@@ -121,10 +142,7 @@ Basic wireframes for each page were created in Figma prior to commencing coding.
 
 
 ## **Final Deployment**
-Basic wireframes for each page were created in Figma prior to commencing coding. Each page has 3 versions of the wireframe for various breakpoints:
-- Mobile
-- Tablet
-- Desktop
+Below is the final deplayment. I am really happy with the overall design and functionality and I cant wait to add to it as I have more to show!
 </br>
 </br>
 
