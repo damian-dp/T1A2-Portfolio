@@ -166,34 +166,31 @@
 
                 const lastfmAPIKey = '4310677c78bdcb21ee2bad7336645da1';
 
-                function updateCurrentSong() {
-                    const xhr = new XMLHttpRequest();
-                    xhr.open('GET', `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=damianpetrov&api_key=${lastfmAPIKey}&format=json`, true);
-
-
-                    xhr.onreadystatechange = function() {
-                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                        const response = JSON.parse(xhr.responseText);
-                        const currentTrack = response.recenttracks.track[0];
+                async function updateCurrentSong() {
+                    try {
+                        const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=damianpetrov&api_key=${lastfmAPIKey}&format=json`);
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        const data = await response.json();
+                        const currentTrack = data.recenttracks.track[0];
                         const currentSong = currentTrack.name;
                         const currentArtist = currentTrack.artist['#text'];
                         const currentSongDiv = document.getElementById('current-song');
                         let songText = `${currentSong} by ${currentArtist}`;
 
                         if (songText.length > 30) {
-                        songText = songText.substr(0, 27) + '...';
+                            songText = songText.substr(0, 27) + '...';
                         }
 
                         currentSongDiv.innerHTML = `<a href="https://www.google.com/search?q=${currentArtist} ${currentSong}" target="_blank" style="text-decoration: none;">${songText}</a>`;
+                    } catch (error) {
+                        console.error('Failed to fetch the current song:', error);
                     }
-                    };
-
-                    xhr.send();
                 }
 
                 setInterval(updateCurrentSong, 10 * 1000);
                 updateCurrentSong();
-
 
             /* ––––––––––––  END CURRENT SPOTIFY SONG WIDGET  –––––––––––– */
 
